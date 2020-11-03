@@ -22,3 +22,15 @@ D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\Mode
 D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.dll
 D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.pdb
 D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.genruntimeconfig.cache
+D:\hk5\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.deps.json
+D:\hk5\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.runtimeconfig.json
+D:\hk5\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.runtimeconfig.dev.json
+D:\hk5\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.dll
+D:\hk5\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.pdb
+D:\hk5\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.csprojAssemblyReference.cache
+D:\hk5\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.AssemblyInfoInputs.cache
+D:\hk5\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.AssemblyInfo.cs
+D:\hk5\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.csproj.CoreCompileInputs.cache
+D:\hk5\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.dll
+D:\hk5\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.pdb
+D:\hk5\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.genruntimeconfig.cache

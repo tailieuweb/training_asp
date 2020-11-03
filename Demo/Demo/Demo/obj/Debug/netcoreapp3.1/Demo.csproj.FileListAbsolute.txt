@@ -1,0 +1,336 @@
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ModelData.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csprojAssemblyReference.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.AssemblyInfoInputs.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.AssemblyInfo.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorAssemblyInfo.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorAssemblyInfo.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.TagHelpers.input.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.TagHelpers.output.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorCoreGenerate.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorTargetAssemblyInfo.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorTargetAssemblyInfo.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.exe
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.deps.json
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.runtimeconfig.json
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.runtimeconfig.dev.json
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.pdb
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.Views.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.Views.pdb
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ModelData.pdb
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.Views.pdb
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CopyComplete
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\staticwebassets\Demo.StaticWebAssets.Manifest.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\staticwebassets\Demo.StaticWebAssets.xml
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.pdb
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.genruntimeconfig.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Register\Index.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Register\SucceededRegister.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Register\NotSucceededRegister.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserPage\Index.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\AddUser\Index.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\ListUser\Index.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\ListUser\EditUser.cshtml.g.cs
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
+D:\Reponsitory Project CDW1\BT CDW1\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\appsettings.json
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.exe
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.deps.json
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.runtimeconfig.json
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.runtimeconfig.dev.json
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.pdb
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.Views.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.Views.pdb
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ModelData.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\bin\Debug\netcoreapp3.1\ModelData.pdb
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csprojAssemblyReference.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.AssemblyInfoInputs.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.AssemblyInfo.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorAssemblyInfo.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorAssemblyInfo.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.TagHelpers.input.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.TagHelpers.output.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorCoreGenerate.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\AddUser\Index.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\ListUser\EditUser.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\ListUser\Index.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Register\Index.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Register\NotSucceededRegister.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Register\SucceededRegister.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserPage\Index.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorTargetAssemblyInfo.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorTargetAssemblyInfo.cs
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.Views.pdb
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CopyComplete
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\staticwebassets\Demo.StaticWebAssets.Manifest.cache
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\staticwebassets\Demo.StaticWebAssets.xml
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.dll
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.pdb
+D:\CDW1 De Nop\CDW1-Reponsitory\Demo\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.genruntimeconfig.cache

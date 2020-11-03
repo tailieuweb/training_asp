@@ -1,0 +1,92 @@
+﻿@{
+    Layout = null;
+}
+@model LoginViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/asset/css/reset.css" />
+    <link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/asset/css/log_reg.css" />
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <div class="container d-flex justify-content-center">
+            <div class="full-height d-flex align-items-center">
+                <!-- Login - Register -->
+                <div class="log-reg">
+                    <div class="row">
+                        <!-- Right Side -->
+                        <div class="log-reg-r col-md-12 col-lg-8 order-1 order-lg-0">
+                            <h2 class="log-reg-r__title text-center">LOGIN</h2>
+                            <p class="log-reg-r__intro text-center d-none d-md-block">
+                                Admin Page
+                            </p>
+                            @if (@ViewBag.succeeded != null)
+                            {
+                                <div style="color:aquamarine">@ViewBag.succeeded</div>
+                            }
+                            <!-- Form -->
+                            <form class="log-reg-r-frm" asp-action="Index" asp-controller="Login">
+                                <div asp-validation-summary="All"></div>
+                                <div class="log-reg-r-frm-item form-group">
+                                    <label asp-for="email"></label>
+                                    <input type="text" asp-for="email"
+                                           class="form-control log-reg-r-frm-item__input" />
+                                </div>
+                                <div class="log-reg-r-frm-item form-group">
+                                    <label asp-for="password"></label>
+                                    <input type="password" asp-for="password"
+                                           class="form-control log-reg-r-frm-item__input" />
+                                </div>
+                                <!-- Button -->
+                                <button type="submit" class="btn btn-primary button-primary">
+                                    Login
+                                </button>
+                            </form>
+                            @if (Model.ExteralLogins.Count == 0)
+                            {
+                                <div>No external logins configured</div>
+                            }
+                            else
+                            {
+                                <form method="post" asp-action="ExternalLogin" asp-controller="Login">
+                                    <div>
+                                        @foreach (var provider in Model.ExteralLogins)
+                                        {
+                                            <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name"
+                                                    title="Login using yor @provider.DisplayName account">
+                                                @provider.DisplayName
+                                                </button>
+                                            }
+                                    </div>
+                                </form>
+                            }
+
+                            <!-- Link -->
+                            <span>Need an account?</span>
+                            <a asp-controller="Register" asp-action="Index" class="log-reg-r__link text-decoration-none">Register</a>
+                        </div>
+                        <!-- Left Side -->
+                        <div class="log-reg-l col-lg-4 order-0 order-lg-1">
+                            <div class="log-reg-l__logo">
+                                <img src="./asset/img/medium-logo.png"
+                                     alt="medium logo"
+                                     class="img-fluid" />
+                            </div>
+                            <div class="log-reg-l__text text-center font-weight-bold text-monospace d-none d-md-block">
+                                Stay Hungry<br />Stay Foolish
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/asset/js/bootstrap.min.js"></script>
+</body>
+</html>

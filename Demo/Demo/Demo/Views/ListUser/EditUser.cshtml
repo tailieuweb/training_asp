@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+@model EditUserViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+    <link rel="stylesheet" href="/asset/css/reset.css" />
+    <link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/asset/css/log_reg.css" />
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <div class="container d-flex justify-content-center">
+            <div class="full-height d-flex align-items-center">
+                <!-- Login - Register -->
+                <div class="log-reg">
+                    <div class="row">
+                        <!-- Right Side -->
+                        <div class="log-reg-r col-12">
+                            <h2 class="log-reg-r__title __tile-reg text-center">
+                                Edit
+                            </h2>
+                            <p class="log-reg-r__intro text-center d-none d-md-block">
+                                Edit user page
+                            </p>
+                            <!-- Form -->
+                            <form class="log-reg-r-frm res-reg-frm" method="post" asp-action="EditUser" asp-controller="ListUser">
+                                <div class="log-reg-r-frm-item form-group">
+                                    <input type="hidden"
+                                           class="form-control log-reg-r-frm-item__input" asp-for="id" />
+                                </div>
+                                <div class="log-reg-r-frm-item form-group">
+                                    <label asp-for="fullName"></label>
+                                    <input type="text"
+                                           class="form-control log-reg-r-frm-item__input" asp-for="fullName" />
+                                </div>
+                                <div class="log-reg-r-frm-item form-group">
+                                    <label asp-for="email"></label>
+                                    <input type="email" asp-for="email"
+                                           class="form-control log-reg-r-frm-item__input" />
+                                </div>
+                                <input type="hidden" asp-for="oldRole"
+                                       class="form-control log-reg-r-frm-item__input" />
+                                <div class="dropdown">
+                                    <select class="selectpicker" asp-for="newRole">
+                                        <option>Admin</option>
+                                        <option>User</option>
+                                    </select>
+                                </div>
+                                <!-- Button -->
+                                <button type="submit" class="btn btn-primary button-primary">
+                                    Save
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

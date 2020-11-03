@@ -1,0 +1,137 @@
+@use './base';
+@import "./mixins";
+@import "./variables";
+
+.background {
+  @include full-screen;
+  @include background-primary("../img/login_background.jpg");
+}
+
+//Login - Register
+.log-reg {
+  @include font-primary;
+  background: $primaryColor;
+  padding: 35px;
+
+  //right side
+  &-r {
+    &__title {
+      color: $whiteColor;
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    .__tile-reg {
+      margin: 10px 0;
+    }
+
+    &-frm-item {
+      margin-bottom: 20px;
+      &__input {
+        @include size(100%, 40px);
+        @include font-primary;
+        border: 1px $blackColor solid;
+        background: $inputColor;
+        transition: 0.3s;
+
+        &:focus {
+          @include font-primary;
+          background: $inputColor;
+          box-shadow: none;
+          border: 1px $primaryPurpleColor solid !important;
+        }
+      }
+    }
+
+    &__link,
+    &__link:hover {
+      color: $primaryPurpleColor;
+    }
+  }
+  //left side
+  &-l {
+    &__text {
+      font-size: 2.4rem;
+    }
+    &__logo {
+      // Responsive logo
+      @include responsive-min-width(320px) {
+        width: 50px;
+        margin: 0 auto;
+      }
+      @include responsive-min-width(480px) {
+        width: 200px;
+      }
+      @include responsive-min-width(768px) {
+        width: 300px;
+      }
+      @include responsive-min-width(1024px) {
+        width: 100%;
+      }
+    }
+  }
+
+  // Responsive Log - Reg
+  @include responsive-min-width(320px) {
+    @include full-screen;
+    border-radius: unset;
+    font-size: 1.2rem;
+    padding: 10px;
+    animation: unset;
+    &-r {
+      &__title {
+        margin: 10px 0;
+      }
+    }
+  }
+  @include responsive-min-width(480px) {
+    font-size: 1.4rem;
+  }
+  @include responsive-min-width(768px) {
+    padding: 35px;
+    font-size: 1.6rem;
+    &-r {
+      &__title {
+        margin: 20px 0;
+      }
+    }
+  }
+  @include responsive-min-width(1024px) {
+    max-width: 785px;
+    @include size(785px, auto);
+    @include rounded-corners(8px);
+    -webkit-animation: appear ease-in-out 0.6s;
+    animation: appear ease-in-out 0.6s;
+  }
+}
+
+//Responsive max-width: 320px (Register)
+.res-reg-frm {
+  @include responsive-max-width(320px) {
+    .log-reg-r-frm-item {
+      margin-bottom: 10px;
+      &__input {
+        @include size(100%, 30px);
+      }
+    }
+  }
+}
+
+//Button
+.button-primary {
+  @include size(100%, 44px);
+  @include font-primary;
+  @include button;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    @include button;
+  }
+
+  @include responsive-max-width(320px) {
+    @include size(100%, 34px);
+  }
+}

@@ -1,0 +1,56 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin full-screen {
+  @include size(100vw, 100vh);
+}
+
+@mixin background-primary($url: null) {
+  background: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@mixin rounded-corners($value) {
+  border-radius: $value;
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  -o-border-radius: $value;
+}
+
+@mixin font-primary {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  color: $textColor;
+}
+
+@mixin button {
+  outline: none !important;
+  border: none !important;
+  color: $whiteColor;
+  background: $primaryPurpleColor;
+  box-shadow: none !important;
+  text-decoration: none;
+}
+
+@mixin align-center-text($value) {
+  height: $value;
+  line-height: $value;
+  text-align: center;
+}
+
+@mixin responsive-max-width($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
+
+@mixin responsive-min-width($value) {
+  @media screen and (min-width: $value) {
+    @content;
+  }
+}

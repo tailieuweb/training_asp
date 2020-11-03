@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;
+}
+@model UserPageViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="/asset/css/reset.css" />
+    <link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/asset/css/admin_home.css" />
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <div class="container d-flex justify-content-center">
+            <div class="full-height d-flex align-items-center">
+                <!-- Login - Register -->
+                <div class="admin_home">
+                    <div class="row">
+                        <!-- Right Side -->
+                        <div class="admin_home-r col-md-12 col-lg-8 order-1 order-lg-0">
+                            <p class="admin_home-r__intro text-center" id="">
+                                @Model.email
+                            </p>
+                            <div class="row admin_home-r-links d-flex justify-content-center">
+                                @foreach (string item in Model.Roles)
+                                {
+                                    if (item == "Admin")
+                                    {
+                                        <a asp-controller="AddUser" asp-action="Index"  class="button-primary col-lg">Add User</a>
+                                        <a asp-controller="ListUser" asp-action="Index" class="button-primary col-lg">List User</a>
+                                    }
+                                }
+                                <a asp-action="EditUser" asp-controller="ListUser" asp-route-idUser="@Model.id" class="button-primary col-lg">Edit Info</a>
+                                <a class="button-primary col-lg button-log-out" asp-controller="Logout" asp-action="Index">Log Out</a>
+                            </div>
+                        </div>
+                        <!-- Left Side -->
+                        <div class="admin_home-l col-lg-4 order-0 order-lg-1">
+                            <div class="admin_home-l-avt">
+                                <img src="./asset/img/user.jpg"
+                                     alt="medium logo"
+                                     class="img-fluid admin_home-l-avt__img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/asset/js/bootstrap.min.js"></script>
+</body>
+</html>

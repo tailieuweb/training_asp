@@ -1,0 +1,73 @@
+﻿@{
+    Layout = null;
+}
+@model AddUserViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add</title>
+    <link rel="stylesheet" href="/asset/css/reset.css" />
+    <link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/asset/css/log_reg.css" />
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <div class="container d-flex justify-content-center">
+            <div class="full-height d-flex align-items-center">
+                <!-- Login - Register -->
+                <div class="log-reg">
+                    <div class="row">
+                        <!-- Right Side -->
+                        <div class="log-reg-r col-12">
+                            <h2 class="log-reg-r__title __tile-reg text-center">
+                                Add
+                            </h2>
+                            <p class="log-reg-r__intro text-center d-none d-md-block">
+                                Add user page
+                            </p>
+                            <!-- Form -->
+                            <form class="log-reg-r-frm res-reg-frm" method="post" asp-controller="AddUser" asp-action="Index">
+                                <div class="log-reg-r-frm-item form-group">
+                                    <label asp-for="fullName"></label>
+                                    <input type="text" asp-for="fullName"
+                                           class="form-control log-reg-r-frm-item__input" />
+                                </div>
+                                <div class="log-reg-r-frm-item form-group">
+                                    <label asp-for="email"></label>
+                                    <input type="email" asp-for="email"
+                                           class="form-control log-reg-r-frm-item__input" />
+                                </div>
+                                <div class="dropdown">
+                                    <select class="selectpicker" asp-for="role">
+                                        <option>Admin</option>
+                                        <option>User</option>
+                                    </select>
+                                </div>
+                                <div class="log-reg-r-frm-item form-group">
+                                    <label asp-for="password"></label>
+                                    <input type="password" asp-for="password"
+                                           class="form-control log-reg-r-frm-item__input"
+                                           id="" />
+                                </div>
+                                <div class="log-reg-r-frm-item form-group">
+                                    <label asp-for="confirmedPassword"></label>
+                                    <input type="password" asp-for="confirmedPassword"
+                                           class="form-control log-reg-r-frm-item__input"
+                                            />
+                                </div>
+                                <!-- Button -->
+                                <button type="submit" class="btn btn-primary button-primary">
+                                    Add
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

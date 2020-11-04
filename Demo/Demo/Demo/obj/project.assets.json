@@ -8850,19 +8850,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\acer\\.nuget\\packages\\": {}
+    "C:\\Users\\ngodi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\hk5\\training_asp\\Demo\\Demo\\Demo\\Demo.csproj",
+      "projectUniqueName": "E:\\training_asp\\Demo\\Demo\\Demo\\Demo.csproj",
       "projectName": "Demo",
-      "projectPath": "D:\\hk5\\training_asp\\Demo\\Demo\\Demo\\Demo.csproj",
-      "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "D:\\hk5\\training_asp\\Demo\\Demo\\Demo\\obj\\",
+      "projectPath": "E:\\training_asp\\Demo\\Demo\\Demo\\Demo.csproj",
+      "packagesPath": "C:\\Users\\ngodi\\.nuget\\packages\\",
+      "outputPath": "E:\\training_asp\\Demo\\Demo\\Demo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ngodi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8875,8 +8875,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\hk5\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj": {
-              "projectPath": "D:\\hk5\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj"
+            "E:\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj": {
+              "projectPath": "E:\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj"
             }
           }
         }

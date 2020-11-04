@@ -5873,19 +5873,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ngodi\\.nuget\\packages\\": {}
+    "C:\\Users\\acer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj",
+      "projectUniqueName": "D:\\hk5\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj",
       "projectName": "ModelData",
-      "projectPath": "E:\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj",
-      "packagesPath": "C:\\Users\\ngodi\\.nuget\\packages\\",
-      "outputPath": "E:\\training_asp\\Demo\\Demo\\ModelData\\obj\\",
+      "projectPath": "D:\\hk5\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj",
+      "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+      "outputPath": "D:\\hk5\\training_asp\\Demo\\Demo\\ModelData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ngodi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

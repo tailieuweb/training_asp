@@ -31,14 +31,12 @@ namespace Demo
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
-
             services.AddIdentity<CustomUser, IdentityRole>(config =>
             {
                 config.Password.RequireDigit = true;
                 config.Password.RequireNonAlphanumeric = false;
                 config.Password.RequireUppercase = false;
             }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
-
             services.ConfigureApplicationCookie(config =>
             {
                 config.LoginPath = "/Login";
@@ -47,8 +45,8 @@ namespace Demo
             });
             services.AddAuthentication().AddGoogle(config =>
             {
-                config.ClientId = "209266398256-ng7c42ve3orlsi7hm00gi1d49njg74dj.apps.googleusercontent.com";
-                config.ClientSecret = "3BbrKQ5E0qiOrSj-FP6iWu3D";
+                config.ClientId = "719890649406-oq9feo82lddestvbeckvoa0q8s8i2kgb.apps.googleusercontent.com";
+                config.ClientSecret = "6y22xAsbu7yF_nT8wktNY5So";
             });
             services.AddControllersWithViews();
         }

@@ -31,12 +31,14 @@ namespace Demo
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
             services.AddIdentity<CustomUser, IdentityRole>(config =>
             {
                 config.Password.RequireDigit = true;
                 config.Password.RequireNonAlphanumeric = false;
                 config.Password.RequireUppercase = false;
             }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+
             services.ConfigureApplicationCookie(config =>
             {
                 config.LoginPath = "/Login";

@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj": {}
+    "D:\\Trainning_asp.net\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj": {}
   },
   "projects": {
-    "E:\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj": {
+    "D:\\Trainning_asp.net\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj",
+        "projectUniqueName": "D:\\Trainning_asp.net\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj",
         "projectName": "ModelData",
-        "projectPath": "E:\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj",
-        "packagesPath": "C:\\Users\\ngodi\\.nuget\\packages\\",
-        "outputPath": "E:\\training_asp\\Demo\\Demo\\ModelData\\obj\\",
+        "projectPath": "D:\\Trainning_asp.net\\training_asp\\Demo\\Demo\\ModelData\\ModelData.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Trainning_asp.net\\training_asp\\Demo\\Demo\\ModelData\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ngodi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -82,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

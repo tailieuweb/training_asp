@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ModelData.EF;
+using System.Threading.Tasks;
 
 namespace Demo.Controllers
 {
@@ -13,6 +10,7 @@ namespace Demo.Controllers
         private readonly UserManager<CustomUser> _userManager;
         private readonly SignInManager<CustomUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+
         public ConfirmEmailController(UserManager<CustomUser> userManager,
             SignInManager<CustomUser> signInManager,
             RoleManager<IdentityRole> roleManager)
@@ -21,13 +19,14 @@ namespace Demo.Controllers
             _roleManager = roleManager;
             _signInManager = signInManager;
         }
-        public async Task<IActionResult> Index(string userId,string token)
+
+        public async Task<IActionResult> Index(string userId, string token)
         {
             var getUser = await _userManager.FindByIdAsync(userId);
             var result = await _userManager.ConfirmEmailAsync(getUser, token);
-            if(result.Succeeded)
+            if (result.Succeeded)
             {
-                var link = Url.Action("Index","Login",new { succeeded = "Bạn đã xác nhận thành công, vui lòng đăng nhập"});
+                var link = Url.Action("Index", "Login", new { succeeded = "Bạn đã xác nhận thành công, vui lòng đăng nhập" });
                 return LocalRedirect(link);
             }
             return null;

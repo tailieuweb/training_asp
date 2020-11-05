@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 @model List<ListUserViewModel>
@@ -11,7 +10,7 @@
     <title>List</title>
     <link rel="stylesheet" href="./asset/css/reset.css" />
     <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./asset/css/log_reg.css" />
+    <link rel="stylesheet" href="./asset/css/log_reg.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
@@ -31,35 +30,38 @@
                                 List user page
                             </p>
                             <!-- Table -->
-                            <table id="rwd-table">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Full Name</th>
-                                        <th>Email</th>
-                                        <th>Role</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @for (int i = 0; i < Model.Count; i++)
-                                    {
-                                    <tr>
-                                        <td>@i</td>
-                                        <td>@Model[i].fullName</td>
-                                        <td>@Model[i].email</td>
-                                        <td>@Model[i].roles.SingleOrDefault()</td>
-                                        <td>
-                                            <a asp-action="EditUser" asp-controller="ListUser" asp-route-idUser ="@Model[i].id">
-                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                            </a>
-                                            <a asp-action="DeleteUser" asp-controller="ListUser" asp-route-idUser ="@Model[i].id">
-                                                <i class="fa fa-times" aria-hidden="true"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    }
-                                </tbody>
-                            </table>
+                            <div class="table-responsive-sm">
+                                <table class="table" id="rwd-table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Full Name</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Role</th>
+                                            <th scope="col">Edit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @for (int i = 0; i < Model.Count; i++)
+                                        {
+                                            <tr>
+                                                <th scope="row">@i</th>
+                                                <td>@Model[i].fullName</td>
+                                                <td>@Model[i].email</td>
+                                                <td>@Model[i].roles.SingleOrDefault()</td>
+                                                <td>
+                                                    <a asp-action="EditUser" asp-controller="ListUser" asp-route-idUser="@Model[i].id">
+                                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a asp-action="DeleteUser" asp-controller="ListUser" asp-route-idUser="@Model[i].id">
+                                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
                             <!-- Button -->
                             <button type="submit" class="btn btn-primary button-primary">
                                 Save

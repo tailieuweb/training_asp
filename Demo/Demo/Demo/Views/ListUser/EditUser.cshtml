@@ -10,7 +10,7 @@
     <title>Edit</title>
     <link rel="stylesheet" href="/asset/css/reset.css" />
     <link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/asset/css/log_reg.css" />
+    <link rel="stylesheet" href="/asset/css/log_reg.min.css" />
 </head>
 <body>
     <!-- Background -->
@@ -46,8 +46,8 @@
                                 </div>
                                 <input type="hidden" asp-for="oldRole"
                                        class="form-control log-reg-r-frm-item__input" />
-                                <div class="dropdown">
-                                    <select class="selectpicker" asp-for="newRole">
+                                <div class="dropdown log-reg-r-frm-item">                                 
+                                   <select class="selectpicker form-control log-reg-r-frm-item__input" asp-for="newRole">
                                         <option>Admin</option>
                                         <option>User</option>
                                     </select>

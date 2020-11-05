@@ -34,3 +34,15 @@ D:\Trainning_asp.net\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\Mo
 D:\Trainning_asp.net\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.dll
 D:\Trainning_asp.net\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.pdb
 D:\Trainning_asp.net\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.genruntimeconfig.cache
+E:\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.deps.json
+E:\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.runtimeconfig.json
+E:\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.runtimeconfig.dev.json
+E:\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.dll
+E:\training_asp\Demo\Demo\ModelData\bin\Debug\netcoreapp3.1\ModelData.pdb
+E:\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.csprojAssemblyReference.cache
+E:\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.AssemblyInfoInputs.cache
+E:\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.AssemblyInfo.cs
+E:\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.csproj.CoreCompileInputs.cache
+E:\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.dll
+E:\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.pdb
+E:\training_asp\Demo\Demo\ModelData\obj\Debug\netcoreapp3.1\ModelData.genruntimeconfig.cache

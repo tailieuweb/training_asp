@@ -1,15 +1,12 @@
 ﻿using MailKit.Net.Smtp;
 using MimeKit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Demo.Services
 {
-    static class EmailConfirmation
+    internal static class EmailConfirmation
     {
-        public static async Task<bool> SendEmailToUser(string toEmail,string url)
+        public static async Task<bool> SendEmailToUser(string toEmail, string url)
         {
             bool result = true;
             try
@@ -21,10 +18,10 @@ namespace Demo.Services
                 message.Body = new TextPart("plain") { Text = $"Click to {url}" };
                 using (var client = new SmtpClient())
                 {
-                  await client.ConnectAsync("smtp.gmail.com", 587, false);
-                  await client.AuthenticateAsync("doanhongthang.tdc2018@gmail.com", "01686803643");
-                  await client.SendAsync(message);
-                  await client.DisconnectAsync(true);
+                    await client.ConnectAsync("smtp.gmail.com", 587, false);
+                    await client.AuthenticateAsync("doanhongthang.tdc2018@gmail.com", "01686803643");
+                    await client.SendAsync(message);
+                    await client.DisconnectAsync(true);
                 }
             }
             catch

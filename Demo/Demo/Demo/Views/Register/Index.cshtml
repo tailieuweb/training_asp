@@ -10,7 +10,7 @@
     <title>Register</title>
     <link rel="stylesheet" href="/asset/css/reset.css" />
     <link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/asset/css/log_reg.css" />
+    <link rel="stylesheet" href="/asset/css/log_reg.min.css" />
 </head>
 <body>
     <!-- Background -->
@@ -29,31 +29,27 @@
                                 Create admin account
                             </p>
                             <!-- Form -->
-                            <form class="log-reg-r-frm res-reg-frm" method="post" asp-controller="Register" asp-action="Index"> 
+                            <form class="log-reg-r-frm res-reg-frm" method="post" asp-controller="Register" asp-action="Index">
                                 <div asp-validation-summary="All"></div>
                                 <div class="log-reg-r-frm-item form-group">
                                     <label asp-for="fullName">Full name</label>
                                     <input type="text" asp-for="fullName"
-                                           class="form-control log-reg-r-frm-item__input"
-                                            />
+                                           class="form-control log-reg-r-frm-item__input" />
                                 </div>
                                 <div class="log-reg-r-frm-item form-group">
                                     <label asp-for="email"></label>
                                     <input type="email" asp-for="email"
-                                           class="form-control log-reg-r-frm-item__input"
-                                          />
+                                           class="form-control log-reg-r-frm-item__input" />
                                 </div>
                                 <div class="log-reg-r-frm-item form-group">
                                     <label asp-for="password">Password</label>
                                     <input type="password" asp-for="password"
-                                           class="form-control log-reg-r-frm-item__input"
-                                           />
+                                           class="form-control log-reg-r-frm-item__input" />
                                 </div>
                                 <div class="log-reg-r-frm-item form-group">
                                     <label asp-for="confirmedPassword">Confirm password</label>
                                     <input type="password" asp-for="confirmedPassword"
-                                           class="form-control log-reg-r-frm-item__input"
-                                           />
+                                           class="form-control log-reg-r-frm-item__input" />
                                 </div>
                                 <!-- Button -->
                                 <button type="submit" class="btn btn-primary button-primary">
@@ -61,7 +57,7 @@
                                 </button>
                             </form>
                             <!-- Link -->
-                            <a asp-controller="Login" asp-action="Index">Already have an account?</a>
+                            <a asp-controller="Login" asp-action="Index" class="log-reg-r__link text-decoration-none">Already have an account?</a>
                         </div>
                     </div>
                 </div>

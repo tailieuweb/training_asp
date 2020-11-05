@@ -9,10 +9,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\asset\scss\admin_home.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="compilerconfig.json" />
-    <None Include="wwwroot\asset\css\log_reg.css.map" />
     <None Include="wwwroot\asset\js\bootstrap.min.js" />
-    <None Include="wwwroot\asset\scss\log_reg.scss" />
     <None Include="wwwroot\asset\scss\_base.scss" />
     <None Include="wwwroot\asset\scss\_mixins.scss" />
     <None Include="wwwroot\asset\scss\_variables.scss" />

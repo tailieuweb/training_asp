@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Demo.Models;
+﻿using Demo.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ModelData.EF;
-using Org.BouncyCastle.Math.EC.Rfc7748;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Demo.Controllers
 {
@@ -17,6 +15,7 @@ namespace Demo.Controllers
         private readonly UserManager<CustomUser> _userManager;
         private readonly SignInManager<CustomUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+
         public ListUserController(UserManager<CustomUser> userManager,
             SignInManager<CustomUser> signInManager,
             RoleManager<IdentityRole> roleManager)
@@ -25,11 +24,12 @@ namespace Demo.Controllers
             _roleManager = roleManager;
             _signInManager = signInManager;
         }
+
         public async Task<IActionResult> Index()
         {
-            List<CustomUser> getUserList =  _userManager.Users.ToList();
+            List<CustomUser> getUserList = _userManager.Users.ToList();
             List<ListUserViewModel> userViewList = new List<ListUserViewModel>();
-            foreach(CustomUser item in getUserList)
+            foreach (CustomUser item in getUserList)
             {
                 ListUserViewModel model = new ListUserViewModel();
                 model.id = item.Id;
@@ -41,6 +41,7 @@ namespace Demo.Controllers
             }
             return View(userViewList);
         }
+
         [HttpGet]
         public async Task<IActionResult> EditUser(string idUser)
         {
@@ -51,12 +52,13 @@ namespace Demo.Controllers
                 model.id = idUser;
                 model.email = getUser.Email;
                 model.fullName = getUser.FullName;
-                var arr = await  _userManager.GetRolesAsync(getUser);
+                var arr = await _userManager.GetRolesAsync(getUser);
                 model.oldRole = arr.ToList().SingleOrDefault();
                 model.newRole = arr.ToList().SingleOrDefault();
             }
             return View(model);
         }
+
         [HttpPost]
         public async Task<IActionResult> EditUser(EditUserViewModel model)
         {
@@ -66,8 +68,9 @@ namespace Demo.Controllers
             getUser.Email = model.email;
             await _userManager.RemoveFromRoleAsync(getUser, model.oldRole);
             await _userManager.AddToRoleAsync(getUser, model.newRole);
-            return RedirectToAction("Index","ListUser");
+            return RedirectToAction("Index", "ListUser");
         }
+
         public async Task<IActionResult> DeleteUser(string idUser)
         {
             var getUser = await _userManager.FindByIdAsync(idUser);

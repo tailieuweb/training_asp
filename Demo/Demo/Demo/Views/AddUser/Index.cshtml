@@ -10,7 +10,7 @@
     <title>Add</title>
     <link rel="stylesheet" href="/asset/css/reset.css" />
     <link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/asset/css/log_reg.css" />
+    <link rel="stylesheet" href="/asset/css/log_reg.min.css"/>
 </head>
 <body>
     <!-- Background -->
@@ -40,8 +40,9 @@
                                     <input type="email" asp-for="email"
                                            class="form-control log-reg-r-frm-item__input" />
                                 </div>
-                                <div class="dropdown">
-                                    <select class="selectpicker" asp-for="role">
+                                <div class="dropdown log-reg-r-frm-item">
+                                    <label asp-for="role"></label>
+                                    <select class="selectpicker form-control log-reg-r-frm-item__input" asp-for="role">
                                         <option>Admin</option>
                                         <option>User</option>
                                     </select>
@@ -55,8 +56,7 @@
                                 <div class="log-reg-r-frm-item form-group">
                                     <label asp-for="confirmedPassword"></label>
                                     <input type="password" asp-for="confirmedPassword"
-                                           class="form-control log-reg-r-frm-item__input"
-                                            />
+                                           class="form-control log-reg-r-frm-item__input" />
                                 </div>
                                 <!-- Button -->
                                 <button type="submit" class="btn btn-primary button-primary">

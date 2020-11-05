@@ -1,130 +1,144 @@
-@use './base';
+@import './base';
 @import "./mixins";
 @import "./variables";
 
 .background {
-  @include full-screen;
-  @include background-primary("../img/login_background.jpg");
+    @include full-screen;
+    @include background-primary("../img/login_background.jpg");
 }
 
 //Login - Register
 .admin_home {
-  @include font-primary;
-  background: $primaryColor;
-  padding: 35px;
-
-  //right side
-  &-r {
-    &__title {
-      color: $whiteColor;
-      font-size: 2.4rem;
-      font-weight: 600;
-      margin: 20px 0;
-    }
-
-    .__tile-reg {
-      margin: 10px 0;
-    }
-
-    &-frm-item {
-      margin-bottom: 20px;
-      &__input {
-        @include size(100%, 40px);
-        @include font-primary;
-        border: 1px $blackColor solid;
-        background: $inputColor;
-        transition: 0.3s;
-
-        &:focus {
-          @include font-primary;
-          background: $inputColor;
-          box-shadow: none;
-          border: 1px $primaryPurpleColor solid !important;
-        }
-      }
-    }
-
-    &__link,
-    &__link:hover {
-      color: $primaryPurpleColor;
-    }
-  }
-  //left side
-  &-l {
-    &-avt {
-      @include rounded-corners(50%);
-      overflow: hidden;
-      background: blue;
-
-      &__img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-      // Responsive avatar
-      @include responsive-min-width(320px) {
-        width: 80px;
-        margin: 0 auto;
-      }
-      @include responsive-min-width(480px) {
-        @include size(200px);
-      }
-    }
-  }
-
-  // Responsive Admin-home
-  @include responsive-min-width(320px) {
-    @include full-screen;
-    font-size: 1.2rem;
-    padding: 20px;
-    animation: unset;
-    &-r {
-      &__title {
-        margin: 10px 0;
-      }
-    }
-  }
-  @include responsive-min-width(480px) {
-    font-size: 1.4rem;
-  }
-  @include responsive-min-width(768px) {
+    @include font-style-primary;
+    background: $primaryColor;
     padding: 35px;
-    font-size: 1.6rem;
+    //right side
     &-r {
-      &__title {
-        margin: 20px 0;
-      }
+        &__title {
+            color: $textColor;
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        .__tile-reg {
+            margin: 10px 0;
+        }
+
+        &-frm-item {
+            margin-bottom: 20px;
+
+            &__input {
+                @include size(100%, 40px);
+                @include font-style-primary;
+                border: 1px $blackColor solid;
+                background: $inputColor;
+                transition: 0.3s;
+
+                &:focus {
+                    @include font-style-primary;
+                    background: $inputColor;
+                    box-shadow: none;
+                    border: 1px $primaryPurpleColor solid !important;
+                }
+            }
+        }
+
+        &__link,
+        &__link:hover {
+            color: $primaryPurpleColor;
+        }
     }
-  }
-  @include responsive-min-width(1024px) {
-    max-width: 960px;
-    @include size(960px, auto);
-    @include rounded-corners(8px);
-    -webkit-animation: appear ease-in-out 0.6s;
-    animation: appear ease-in-out 0.6s;
-  }
+    //left side
+    &-l {
+        &-avt {
+            @include rounded-corners(50%);
+            overflow: hidden;
+            background: blue;
+
+            &__img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            // Responsive avatar
+            @include responsive-min-width(320px) {
+                width: 80px;
+                margin: 0 auto;
+            }
+
+            @include responsive-min-width(480px) {
+                @include size(200px);
+            }
+        }
+    }
+    // Responsive Admin-home
+    @include responsive-min-width(320px) {
+        @include full-screen;
+        font-size: 1.4rem;
+        padding: 20px;
+        animation: unset;
+
+        &-r {
+            &__title {
+                font-size: 1.4rem;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    @include responsive-min-width(480px) {
+        font-size: 1.4rem;
+
+        &-r {
+            &__title {
+                font-size: 1.6rem;
+                margin: 20px 0;
+            }
+        }
+    }
+
+    @include responsive-min-width(768px) {
+        padding: 35px;
+        font-size: 1.6rem;
+
+        &-r {
+            &__title {
+                font-size: 2.4rem;
+                margin: 20px 0;
+            }
+        }
+    }
+
+    @include responsive-min-width(1024px) {
+        max-width: 960px;
+        @include size(960px, auto);
+        @include rounded-corners(8px);
+        -webkit-animation: appear ease-in-out 0.6s;
+        animation: appear ease-in-out 0.6s;
+    }
 }
 
 //Button
 .button-primary {
-  @include align-center-text(44px);
-  @include rounded-corners(8px);
-  @include font-primary;
-  @include button;
-  margin: 10px;
-
-  &:hover {
+    @include align-center-text(44px);
+    @include rounded-corners(8px);
+    @include font-style-primary;
     @include button;
-  }
+    margin: 10px;
 
-  @include responsive-max-width(320px) {
-    @include size(100%, 34px);
-    @include align-center-text(34px);
-  }
+    &:hover {
+        @include button;
+    }
+
+    @include responsive-max-width(320px) {
+        @include size(100%, 34px);
+        @include align-center-text(34px);
+    }
 }
 
 .button-log-out,
 .button-log-out:hover {
-  background-color: $logoutColor;
-  color: $primaryPurpleColor;
-  font-weight: 600;
+    background-color: $btnLogoutColor;
+    color: $primaryColor;
+    font-weight: 600;
 }

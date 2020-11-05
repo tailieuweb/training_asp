@@ -1,1 +1,10 @@
-[]
+﻿[
+  {
+    "outputFile": "wwwroot/asset/scss/log_reg.css",
+    "inputFile": "wwwroot/asset/scss/log_reg.scss"
+  },
+  {
+    "outputFile": "wwwroot/asset/scss/admin_home.css",
+    "inputFile": "wwwroot/asset/scss/admin_home.scss"
+  }
+]

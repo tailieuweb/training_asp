@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ModelData.EF;
+using System.Threading.Tasks;
 
 namespace Demo.Controllers
 {
@@ -13,6 +10,7 @@ namespace Demo.Controllers
         private readonly UserManager<CustomUser> _userManager;
         private readonly SignInManager<CustomUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+
         public LogoutController(UserManager<CustomUser> userManager,
             SignInManager<CustomUser> signInManager,
             RoleManager<IdentityRole> roleManager)
@@ -21,9 +19,10 @@ namespace Demo.Controllers
             _roleManager = roleManager;
             _signInManager = signInManager;
         }
+
         public async Task<IActionResult> Index()
         {
-             await _signInManager.SignOutAsync();
+            await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Login");
         }
     }

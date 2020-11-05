@@ -1,10 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -45,8 +40,8 @@ namespace Demo
             });
             services.AddAuthentication().AddGoogle(config =>
             {
-                config.ClientId = "719890649406-oq9feo82lddestvbeckvoa0q8s8i2kgb.apps.googleusercontent.com";
-                config.ClientSecret = "6y22xAsbu7yF_nT8wktNY5So";
+                config.ClientId = "444815247552-0rproh69d86gmu1mhu3jvhvi4fgqhh5j.apps.googleusercontent.com";
+                config.ClientSecret = "h0lRN80aDGPwcUZUAOx7m_Uo";
             });
             services.AddControllersWithViews();
         }

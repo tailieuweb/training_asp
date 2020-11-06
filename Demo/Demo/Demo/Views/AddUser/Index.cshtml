@@ -30,6 +30,7 @@
                             </p>
                             <!-- Form -->
                             <form class="log-reg-r-frm res-reg-frm" method="post" asp-controller="AddUser" asp-action="Index">
+                                <div asp-validation-summary="All"></div>
                                 <div class="log-reg-r-frm-item form-group">
                                     <label asp-for="fullName"></label>
                                     <input type="text" asp-for="fullName"

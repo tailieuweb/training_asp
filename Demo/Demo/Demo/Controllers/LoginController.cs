@@ -61,7 +61,7 @@ namespace Demo.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> ExternalLogin(string provider)
+        public  IActionResult ExternalLogin(string provider)
         {
             var redirectUrl = Url.Action("ExternalLoginCallBack", "Login");
             var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);

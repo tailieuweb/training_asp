@@ -1,0 +1,109 @@
+@import "_variables.scss";
+
+// Cài đặt kích thước chiều cao cho đối tượng
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// Set kích thước toàn màn hình
+@mixin full-screen {
+  @include size(100vw, 100vh);
+}
+
+//Set background mặc định cho đối tượng
+@mixin set-background-primary($url: null) {
+  background: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+//Chuẩn border prefix
+@mixin rounded-corners($value) {
+  border-radius: $value;
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+}
+
+//border
+@mixin border-all($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+//-------------Format Font----------------
+@mixin format-font(
+  $fontFamily: $base-font-sans-serif-family,
+  $size: $base-size-font,
+  $color: $text-primary-color,
+  $weight: 400
+) {
+  font-family: $fontFamily;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+//Format chuẩn sans serif text trang Home
+@mixin primary-sans-text {
+  @include format-font($base-font-sans-serif-family);
+}
+//Format chuẩn serif text trang Home
+@mixin primary-serif-text {
+  @include format-font($base-font-serif-family);
+}
+//Title Home
+@mixin primary-title-home {
+  @include format-font(
+    $base-font-sans-serif-family,
+    3rem,
+    $text-primary-color,
+    600
+  );
+}
+
+//-------------Button format-------------
+@mixin button {
+  outline: none !important;
+  border: none !important;
+  color: $white-color;
+  background: $btn-primary-color;
+  box-shadow: none !important;
+  text-decoration: none;
+  @include rounded-corners(8px);
+}
+
+@mixin button-primary {
+  @include size(100%, 44px);
+  @include format-font;
+  @include button;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    @include button;
+  }
+}
+
+//-------------Input format--------------
+@mixin input-primary {
+  @include size(100%, 40px);
+  @include format-font();
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+//-------------Responsive-------------
+@mixin responsive-max-width($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
+
+@mixin responsive-min-width($value) {
+  @media screen and (min-width: $value) {
+    @content;
+  }
+}

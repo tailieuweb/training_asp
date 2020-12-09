@@ -1,0 +1,24 @@
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.deps.json
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.dll
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.AssemblyInfoInputs.cache
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.AssemblyInfo.cs
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.runtimeconfig.json
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.runtimeconfig.dev.json
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.genruntimeconfig.cache
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.pdb
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.csproj.CoreCompileInputs.cache
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.dll
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.pdb
+D:\CDW2 Reponsitory\CDW2-Project\Nhom8Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.csprojAssemblyReference.cache
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.deps.json
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.dll
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.pdb
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.csprojAssemblyReference.cache
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.AssemblyInfoInputs.cache
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.AssemblyInfo.cs
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.dll
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.pdb
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.runtimeconfig.json
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\bin\Debug\netcoreapp3.1\ModelDatabase.runtimeconfig.dev.json
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.genruntimeconfig.cache
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\ModelDatabase\obj\Debug\netcoreapp3.1\ModelDatabase.csproj.CoreCompileInputs.cache

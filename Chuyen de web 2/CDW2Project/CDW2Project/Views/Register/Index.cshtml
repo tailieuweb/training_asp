@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutLogReg.cshtml";
+}
+@model RegisterViewModel
+<div class="frm">
+    <form class="frm-log-reg"
+          asp-action="Index"
+          asp-controller="Register" method="post" asp-antiforgery="true">
+        @* Nếu thành công sẽ ra 2 cái statements để thông báo *@
+        @if (@ViewBag.successed != null)
+        {
+            foreach (KeyValuePair<string, string> @item in @ViewBag.successed)
+            {
+                <div class="text-success frm-log-reg-noti">@item.Value</div>
+            }
+        }
+        @Html.ValidationSummary(false, "", new { @class = "text-danger frm-log-reg-noti" })
+        <h2 class="frm-log-reg-title text-center">Join us</h2>
+        <div class="frm-log-reg-item form-group">
+            <label asp-for="userName"></label>
+            <input asp-for="userName" type="text" class="form-control frm-log-reg-item-input" />
+        </div>
+        <div class="frm-log-reg-item form-group">
+            <label asp-for="email"></label>
+            <input asp-for="email" type="text" class="form-control frm-log-reg-item-input" />
+        </div>
+        <div class="frm-log-reg-item form-group">
+            <label asp-for="password"></label>
+            <input asp-for="password" type="password" class="form-control frm-log-reg-item-input" />
+        </div>
+        <div class="frm-log-reg-item form-group">
+            <label asp-for="confirmPassword"></label>
+            <input asp-for="confirmPassword" type="password" class="form-control frm-log-reg-item-input" />
+        </div>
+        <!-- Button -->
+        <button type="submit" class="btn btn-primary button-primary">
+            Register
+        </button>
+        @if (Model.externalRegister.Count == 0)
+        {
+            <div>No external logins configured</div>
+        }
+        else
+        {
+            @foreach (var provider in Model.externalRegister)
+            {
+                <button type="submit" class="btn btn-primary button-primary" asp-controller="Register" asp-action="ExternalRegister" asp-route-provider="@provider.Name" title="Login using yor @provider.DisplayName account">
+                    or Register with @provider.DisplayName
+                </button>
+            }
+        }
+        <p>
+            Already registered?<a class="frm-log-reg-link text-decoration-none"
+                                  asp-action="Index" asp-controller="Loginin">Login</a>
+        </p>
+    </form>
+</div>

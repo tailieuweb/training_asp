@@ -1,0 +1,292 @@
+@import '../_base.scss';
+@import "../_mixins.scss";
+@import "../_variables.scss";
+
+//=================== FULL ==================
+.full {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    @include primary-sans-text;
+    //=================== HEADER ==================
+    .header {
+        margin: 40px 0;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        @include responsive-max-width(768px) {
+            margin: 20px 0;
+        }
+        //=================== HEADER LEFT ==================
+        &__left {
+            width: 57%;
+            &__logo {
+                a {
+                    img {
+                        float: left;
+                        @include size(32%, 12%);
+                        border-right: 1px solid $tro-color;
+                        padding-right: 16px;
+                        @include responsive-max-width(768px) {
+                            border: none;
+                            width: 80%;
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+            &__good {
+                width: 66%;
+                float: right;
+                display: block;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 7px;
+                font-family: sans-serif;
+                @include responsive-max-width(768px) {
+                    display: none;
+                }
+            }
+        }
+        //=================== HEADER RIGHT ==================
+        &__right {
+            width: 43%;
+            justify-content: flex-end;
+            display: flex;
+            align-items: center;
+            &__bell {
+                margin-right: 16px;
+                padding-top: 4px;
+                a {
+                    color: $text-secondary-color;
+                    .fa {
+                        font-size: large;
+                    }
+                }
+            }
+            &__up {
+                margin-right: 16px;
+                a {
+                    text-decoration: none;
+                    @include rounded-corners(4px);
+                    color: $white-color;
+                    font-size: 14px;
+                    background: $black-color;
+                    font-weight: bold;
+                    padding: 4px 12px 6px;
+                }
+                @include responsive-max-width(768px) {
+                    display: none;
+                }
+            }
+            &__account {
+                .dropdown {
+                    float: right;
+                    .btn-primary {
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        img {
+                            width: 30px;
+                            @include rounded-corners(100%);
+                        }
+                    }
+                    .dropdown-menu {
+                        margin-top: 20px;
+                        font-size: 14px;
+                        min-width: 250px;
+                        overflow-y: auto;
+                        max-height: 400px;
+                        .dropdown-item {
+                            padding: 10px;
+                            clear: none;
+                            cursor:pointer;
+                            background: $white-color;
+                            &:hover {
+                            color: $black-color;
+                            }
+                            img {
+                            width: 40px;
+                            @include rounded-corners(100%);
+                            float: left;
+                            margin-right: 20px;
+                            }
+                            .name {
+                                p {
+                                    margin-top: 5px;
+                                    &:hover {
+                                    text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                        .active {
+                            color: $green-color;
+                        }
+                    }
+                    
+                    #style-1::-webkit-scrollbar-track
+                    {
+                        @include rounded-corners(10px);
+                        background-color: $background-primary-color;
+                    }
+        
+                    #style-1::-webkit-scrollbar
+                    {
+                        width: 6px;
+                        background-color: $background-primary-color;
+                    }
+        
+                    #style-1::-webkit-scrollbar-thumb
+                    {
+                        @include rounded-corners(10px);
+                        background-color: $tro-color;
+                    }
+                }
+            }
+        }
+    }
+    //=================== h1 ==================
+    h1 {
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+    //=================== MENU ==================
+    .menu {
+        padding: 0 10px 20px 10px;
+        ul {
+            display: flex;
+            border-bottom: 1px solid $tro-color;
+            li {
+                @include size(100px,30px);
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: $text-secondary-color;
+                    font-weight: bold;
+                    &:hover {
+                        color: $text-primary-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .active {
+                border-bottom: 1px solid $text-primary-color;
+            }
+        }
+    }
+    //=================== INFO ==================
+    .info {
+        padding: 0 10px;
+        &__box {
+            border-bottom: 1px solid $tro-color;
+            padding-bottom: 10px;
+            &__title {
+                p {
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    margin-bottom: 10px;
+                }
+            }
+            &__content {
+                p {
+                    margin-bottom: 10px;
+                    color: $text-secondary-color;
+                    font-weight: bold;
+                }
+            }
+            &__time {
+                display: flex;
+                font-size: 13px;
+                color: $text-secondary-color;
+                font-weight: bold;
+                @include responsive-max-width(576px) {
+                    display: inline;
+                }
+                &__last {
+                    @include responsive-max-width(576px) {
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+                }
+                &__cham {
+                    padding: 0 6px;
+                    @include responsive-max-width(576px) {
+                        display: none;
+                    }
+                }
+                &__read {
+                    padding-right: 6px;
+                    @include responsive-max-width(576px) {
+                        float: left;   
+                    }
+                }
+                &__muiten {
+                    @include responsive-max-width(576px) {
+                        
+                    }
+                    .btn-primary {
+                        background: $white-color;
+                        color: $tro-color;
+                        @include border-all(1px, solid, $tro-color);
+                    }
+                    .dropdown-menu {
+                        min-width: 18rem;
+                        .dropdown-item {
+                            display: flex;
+                            padding: 0.50rem 1.5rem;
+                            cursor:pointer !important; 
+                            .left_button {
+                                width: 90%;
+                                float: left;
+                                span {
+                                    font-size: 13px;
+                                }
+                            }
+                            .right_button {
+                                width: 10%;
+                                float: right;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+//=================== MODAL ==================
+.modal {
+    padding: 0;
+
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                .modal-title {
+                    display: flex;
+                    align-items: center;
+
+                    .titleDelete {
+                        font-size: 18px;
+                        color: $orange-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .modal-footer {
+                display: flex;
+                justify-content: center;
+
+                .btn-success, .btn-danger {
+                    font-size: 13px;
+                    padding: 0.375rem 2.75rem;
+                }
+            }
+        }
+    }
+}
+}

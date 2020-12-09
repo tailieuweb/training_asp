@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutLogReg.cshtml";
+}
+@model LoginViewModel
+<div class="frm">
+    <form class="frm-log-reg"
+          asp-action="Index"
+          asp-controller="Loginin" method="post">
+        <h2 class="frm-log-reg-title text-center">Welcome To Login</h2>
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        <div class="frm-log-reg-item form-group">
+            <label asp-for="email"></label>
+            <input asp-for="email" type="text" class="form-control frm-log-reg-item-input" />
+        </div>
+        <div class="frm-log-reg-item form-group">
+            <label asp-for="password"></label>
+            <input type="password" asp-for="password"
+                   class="form-control frm-log-reg-item-input" />
+        </div>
+        <div class="frm-log-reg-item form-group">
+            <label asp-for="rememberMe"></label>
+            <input type="checkbox" asp-for="rememberMe" />
+        </div>
+        <!-- Button -->
+        <button type="submit" class="btn btn-primary button-primary">
+            Login
+        </button>
+        @if (Model.externalLogins.Count == 0)
+        {
+            <div>Website is not supported external Login</div>
+        }
+        else
+        {
+            foreach (var item in Model.externalLogins)
+            {
+                <button type="submit" class="btn btn-primary button-primary" asp-action="ExternalLogin" asp-controller="Loginin" asp-route-provider="@item.Name">
+                    or Login with @item.DisplayName
+                </button>
+            }
+        }
+        <p>
+            Not registered?<a class="frm-log-reg-link text-decoration-none"
+                              asp-action="Index" asp-controller="Register">Register</a>
+        </p>
+    </form>
+</div>

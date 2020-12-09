@@ -60,7 +60,6 @@ namespace Demo.Controllers
             }
             return View(model);
         }
-
         public  IActionResult ExternalLogin(string provider)
         {
             var redirectUrl = Url.Action("ExternalLoginCallBack", "Login");

@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Your stories</h1>
+<div>
+    <div>Tìm kiếm</div>
+    <input type="text" name="searchBox" id="searchBox" value="" />
+</div>
+<!-- Menu -->
+<div class="menu">
+    <ul style="list-style:none">
+        <li typeArticle="draft"><a href="#">Drafts</a></li>
+        <li typeArticle="publish"><a href="#">Published</a></li>
+    </ul>
+</div><!-- Menu -->
+<!-- Information -->
+<div class="info">
+</div><!-- Information -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLongTitle">
+                    <img src="~/img/warning.png" alt=""><span class="titleDelete">Delete</span>
+                </h5>
+                <div type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                Do you want to delete the post??
+            </div>
+            <div class="modal-footer">
+                <div type="button" class="btn btn-success" data-dismiss="modal">Cancel</div>
+                <div type="button" class="btn btn-danger" data-dismiss="modal">Delete</div>
+            </div>
+        </div>
+    </div>
+</div>
+@*notification*@
+@section Stories_View
+{
+    <script src="~/js/Stories/Story.js"></script>
+}

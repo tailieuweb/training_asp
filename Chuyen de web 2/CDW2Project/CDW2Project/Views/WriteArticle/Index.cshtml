@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ArticleTypeListModel
+<div>
+    Chọn loại bài viết:
+    <select asp-for="ArticleType" asp-items="@(new SelectList(Model.ArticleTypeList,"ArticleTypeId","Name"))">
+    </select>
+</div>
+<textarea name="content" id="ckeditor"></textarea>
+<div id="handleEditorText" style="display:none"></div>
+@section WriteArticle_View{
+    <script src="~/ckeditor5/build/ckeditor.js"></script>
+    <script src="~/ckfinder/ckfinder/ckfinder.js"></script>
+    <script src="~/js/WriteStory/WriteStories.js"></script>
+}

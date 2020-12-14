@@ -1,0 +1,457 @@
+@import './base';
+@import "./mixins";
+@import "./variables";
+
+//=================== FULL ==================
+.full {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    @include primary-sans-text;
+    //=================== HEADER ==================
+    .header {
+        margin: 40px 0;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        @include responsive-max-width(768px) {
+            margin: 20px 0;
+        }
+        //=================== HEADER LEFT ==================
+        &__left {
+            width: 57%;
+            &__logo {
+                a {
+                    img {
+                        float: left;
+                        @include size(32%, 12%);
+                        border-right: 1px solid $tro-color;
+                        padding-right: 16px;
+                        @include responsive-max-width(768px) {
+                            border: none;
+                            width: 80%;
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+            &__good {
+                width: 66%;
+                float: right;
+                display: block;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 7px;
+                font-family: sans-serif;
+                @include responsive-max-width(768px) {
+                    display: none;
+                }
+            }
+        }
+        //=================== HEADER RIGHT ==================
+        &__right {
+            width: 43%;
+            justify-content: flex-end;
+            display: flex;
+            align-items: center;
+            &__bell {
+                margin-right: 16px;
+                padding-top: 4px;
+                a {
+                    color: $text-secondary-color;
+                    .fa {
+                        font-size: large;
+                    }
+                }
+            }
+            &__up {
+                margin-right: 16px;
+                a {
+                    text-decoration: none;
+                    @include rounded-corners(4px);
+                    color: $white-color;
+                    font-size: 14px;
+                    background: $black-color;
+                    font-weight: bold;
+                    padding: 4px 12px 6px;
+                }
+                @include responsive-max-width(768px) {
+                    display: none;
+                }
+            }
+            &__account {
+                .dropdown {
+                    float: right;
+                    .btn-primary {
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        img {
+                            width: 30px;
+                            @include rounded-corners(100%);
+                        }
+                    }
+                    .dropdown-menu {
+                        margin-top: 20px;
+                        font-size: 14px;
+                        min-width: 250px;
+                        overflow-y: auto;
+                        max-height: 400px;
+                        .dropdown-item {
+                            padding: 10px;
+                            clear: none;
+                            background: $white-color;
+                            &:hover {
+                            color: $black-color;
+                            }
+                            img {
+                            width: 40px;
+                            @include rounded-corners(100%);
+                            float: left;
+                            margin-right: 20px;
+                            }
+                            .name {
+                                p {
+                                    margin-top: 5px;
+                                    &:hover {
+                                    text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                        .active {
+                            color: $green-color;
+                        }
+                    }
+                    
+                    #style-1::-webkit-scrollbar-track
+                    {
+                        @include rounded-corners(10px);
+                        background-color: $background-primary-color;
+                    }
+        
+                    #style-1::-webkit-scrollbar
+                    {
+                        width: 6px;
+                        background-color: $background-primary-color;
+                    }
+        
+                    #style-1::-webkit-scrollbar-thumb
+                    {
+                        @include rounded-corners(10px);
+                        background-color: $tro-color;
+                    }
+                }
+            }
+        }
+    }
+    //=================== AVATAR ==================
+    .avatar {
+        text-align: center;
+        .dropdown {
+            .btn-primary {
+                background: none;
+                border: none;
+                outline: none;
+                padding: 4px 4px 0 4px;
+                img {
+                    @include size(168px,168px);
+                    @include rounded-corners(5px);
+                }
+            }
+            .dropdown-menu {
+                margin-top: 10px;
+                font-size: 14px;
+                min-width: 176px;
+                overflow-y: auto;
+                max-height: 100px;
+                @include rounded-corners(5px);
+                padding: 5px;
+                .dropdown-item {
+                    padding: 10px;
+                    clear: none;
+                    background: $white-color;
+                    font-weight: bold;
+                    &:hover {
+                        background: $tro-color;
+                        @include rounded-corners(5px);
+                    }
+                    .fa {
+                        margin-right: 6px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            
+            #style-1::-webkit-scrollbar-track
+            {
+                @include rounded-corners(10px);
+                background-color: $background-primary-color;
+            }
+
+            #style-1::-webkit-scrollbar
+            {
+                width: 6px;
+                background-color: $background-primary-color;
+            }
+
+            #style-1::-webkit-scrollbar-thumb
+            {
+                @include rounded-corners(10px);
+                background-color: $tro-color;
+            }
+        }
+        h1 {
+            margin-top: 5px;
+            font-size: 26px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    }
+
+    //=================== LANGUAGE ==================
+    .language {
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        &__box {   
+            width: 70%; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            @include responsive-max-width(576px) {
+                display: inline;
+            }
+            @include responsive-max-width(534px) {
+                width: 80%;
+            }
+            @include responsive-max-width(357px) {
+                width: 100%;
+            }
+            &__item {
+                @include size(90px,60px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include responsive-max-width(576px) {
+                    float: left;
+                } 
+                a {
+                    text-decoration: none;
+                    h4 {
+                        font-weight: bold;
+                        font-size: 14px;
+                        color: $text-secondary-color;
+                    }
+                }
+            }
+            .active {
+                background: $tro-color;
+                
+            }
+        }
+    }
+    //=================== INFORMATION ==================
+    .info {
+        clear: both;
+        border-top: 1px solid $tro-color;
+        padding-top: 20px;
+        &__left {
+            width: 30%;
+            float: left;
+            padding: 0 10px;
+            @include responsive-max-width(576px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            &__box {
+                h2 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                }
+                &__title {
+                    ul {
+                        li {
+                            margin-bottom: 10px;
+                            .fa {
+                                font-size: x-large;
+                                margin-right: 6px;
+                            }
+                        }
+                    }
+                }
+                &__content {
+                    text-align: center;
+                    text-decoration: none;
+                    p {
+                        text-transform: capitalize;
+                        background: $tro-color;
+                        padding: 5px 0;
+                        color: $text-primary-color;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                        @include rounded-corners(5px);
+                    }
+                }
+            }
+        }
+        &__right {
+            padding: 0 10px;
+            width: 70%;
+            float: right;
+            @include responsive-max-width(576px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            &__box {
+                padding-right: 10px;
+                &__item {
+                    display: flex;
+                    margin-bottom: 20px;
+                    @include responsive-max-width(576px) {
+                        display: inline;
+                    }
+                    &__left {
+                        margin-right: 20px;
+                        @include responsive-max-width(576px) {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        &__link {
+                            a {
+                                display: flex;
+                                text-decoration: none;
+                                color: $black-color;
+                                font-size: 13px;
+                                font-weight: bold;
+                                align-items: center;
+                                img {
+                                    @include size(20px,20px);
+                                }
+                                h4 {
+                                    margin-left: 8px;
+                                    line-height: 15px;
+                                }
+                            }
+                        }
+                        &__title {
+                            padding: 8px 0 10px 0;
+                            a {
+                                text-decoration: none;
+                                h2 {
+                                    color: $black-color;
+                                    font-size: 22px;
+                                    font-weight: bold;
+                                    font-family: sans-serif;
+                                    line-height: 25px;
+                                    @include responsive-max-width(768px) {
+                                        font-size: 18px;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        &__content {
+                            p {
+                                font-size: 16px;
+                                color: $text-secondary-color;
+                            }
+                        }
+                        &__time {
+                            &__left {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: baseline;
+                                &__day {
+                                    display: flex;
+                                    align-items: baseline;
+                                    margin-top: 16px;
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    &__month {
+                                        h4 {
+                                            color: $text-secondary-color;
+                                        }
+                                    }
+                                    &__cham {
+                                        span {
+                                            padding: 0 6px;
+                                            color: $text-secondary-color;
+                                        }
+                                    }
+                                    &__name, &__minute {
+                                        span {
+                                            color: $text-secondary-color;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                        &__like {
+                            margin-top: 5px;
+                            span {
+                                float: left;
+                                margin-right: 6px;
+                            }
+                            .thumb {
+                                text-align: center;
+                                @include size(30px,30px);
+                                @include rounded-corners(50%);
+                                font-size: 15px;
+                                border: 1px solid $tro-color;
+                                line-height: 28px;
+                                display: inline-block;
+                                cursor: pointer;
+                                transition: all 0.5s
+                            }
+                            .thumbs-up {
+                                &:hover {
+                                    color: $white-color;
+                                    background-color: $green-color;
+                                    border: 1px solid $green-color;
+                                }
+                            }
+                            p {
+                                padding-top: 6px;
+                            }
+                        }
+                    }
+                    &__right {
+                        @include responsive-max-width(576px) {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        a {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .scrollbar {
+                height: 590px;
+                float: left;
+                margin-bottom: 16px;
+                overflow-y: scroll;
+            }
+            #style-1::-webkit-scrollbar {
+                width: 6px;
+                background-color: $tro-color;
+                @include rounded-corners(10px);
+            } 
+            #style-1::-webkit-scrollbar-thumb {
+                @include rounded-corners(10px);
+                background-color: $tro-color;
+            }
+            #style-1::-webkit-scrollbar-track {
+                @include rounded-corners(10px);
+                background-color: $white-color;
+            }
+        }
+    }
+}

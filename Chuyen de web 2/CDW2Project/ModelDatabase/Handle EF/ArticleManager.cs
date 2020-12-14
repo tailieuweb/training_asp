@@ -94,10 +94,39 @@ namespace ModelDatabase.Handle_EF
             }
             return result;
         }
-        public async Task<Article> GetLatestFiveNewsArticles()
+        public List<Article> GetLatestFourNewsArticles()
         {
-            var result = _context.Article.ToList();
-            return null;
+            var result = _context.Article.Take(4).OrderBy(x => x.Date).ToList();
+            return result;
+        }
+        public List<Article> GetArticlesListWithSearchType(string articleType,string searchedContent,int take,int skip)
+        {
+            if (articleType == "other")
+            {
+               return _context.Article.Where(x => x.Title.Contains(searchedContent)).OrderByDescending(x => x.Date).Skip(skip).Take(take).ToList();
+            }
+            var result = _context.Article.Where(x => x.Title.Contains(searchedContent) && x.ArticleArticleTypeId == articleType)
+                .OrderByDescending(x => x.Date)
+                .Skip(skip)
+                .Take(take).ToList();
+            return result;
+        }
+        public List<Article> GetUserArticleTakeSkip(string userId,int take,int skip,string searchedContent,bool status,string ArticleArticleTypeId)
+        {
+            if(ArticleArticleTypeId == "other")
+            {
+                var other = _context.Article.Where(a => a.ArticleUserId == userId && a.Title.Contains(searchedContent) && a.Status == status)
+                 .OrderByDescending(or => or.Date)
+                .Skip(skip)
+                .Take(take)
+                .ToList();
+                return other;
+            }
+            var result = _context.Article.Where(a => a.ArticleUserId == userId && a.Title.Contains(searchedContent) && a.Status == status && a.ArticleArticleTypeId == ArticleArticleTypeId)
+            .Skip(skip)
+            .Take(take)
+            .ToList();
+            return result;
         }
     }
 }

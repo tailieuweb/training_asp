@@ -9,6 +9,7 @@ using CDW2Project.Models;
 using ModelDatabase;
 using Microsoft.AspNetCore.Authorization;
 using ModelDatabase.Handle_EF;
+using CDW2Project.FetchModel;
 
 namespace CDW2Project.Controllers
 {
@@ -23,8 +24,40 @@ namespace CDW2Project.Controllers
         public IActionResult Index()
         {
             ArticleManager articleManager = new ArticleManager(_context);
-            //var result = articleManager.GetLatestFiveNewsArticles();
-            return View();
+            ArticleTypeManager articleTypeManager = new ArticleTypeManager(_context);
+            TypeAndArticleList typeAndArticleList = new TypeAndArticleList();
+            var articleList = articleManager.GetLatestFourNewsArticles();
+            var articleTypeList = articleTypeManager.GetArticleTypeList();
+            if (articleList.Any())
+            {
+                typeAndArticleList.articles = articleList;
+            }
+            if (articleTypeList.Any())
+            {
+                typeAndArticleList.articleTypes = articleTypeList;
+            }
+            return View(typeAndArticleList);
+        }
+        public JsonResult getAllArticlesBySearchType([FromBody]PostSearchTypeArticles model)
+        {
+            ArticleManager articleManager = new ArticleManager(_context);
+            var result = articleManager.GetArticlesListWithSearchType(model.articleType, model.searchedContent, model.take, model.skip);
+            if (result.Any())
+            {
+                return Json(new { articleList = result });
+            }
+            return Json(new { articleList = ""});
+        }
+        [HttpPost]
+        public JsonResult getAllUser([FromBody] PostAllUser model)
+        {
+            if (ModelState.IsValid)
+            {
+                UserAccountManager userAccountManager = new UserAccountManager(_context);
+                var result = userAccountManager.GetUserSkipTake(model.take, model.skip);
+                return Json(new { userList = result });
+            }
+            return Json(new { });
         }
     }
 }

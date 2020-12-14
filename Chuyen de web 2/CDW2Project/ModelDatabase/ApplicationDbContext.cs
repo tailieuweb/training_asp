@@ -102,6 +102,7 @@ namespace ModelDatabase
             });
             base.OnModelCreating(modelBuilder);
         }
+       public DbSet<UserAccount> UserAccount { set; get; }
        public DbSet<Article> Article { set; get; }
        public DbSet<ArticleType> ArticleType { set; get; }
        public DbSet<Comment> Comment { set; get; }

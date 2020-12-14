@@ -2,427 +2,122 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@model TypeAndArticleList
 <!-- Banner -->
 <div class="banner">
     <!-- Banner Left-->
-    <div class="banner__left">
-        <!-- Banner Left Box-->
-        <div class="banner__left__box">
-            <!-- Banner Left Box Img-->
-            <div class="banner__left__box__img">
-                <a href="#">
-                    <img src="~/img/people.jpeg" alt="">
-                </a>
-            </div>
-            <!-- Banner Left Box Link-->
-            <div class="banner__left__box__link">
-                <a href="#">
-                    <img src="~/img/logo-banner.png" alt="">
-                    <h4>Lorem ipsum dolor sit amet </h4>
-                </a>
-            </div>
-            <!-- Banner Left Box Title-->
-            <div class="banner__left__box__title">
-                <a href="#">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit Repellat doloremque</h2>
-                </a>
-            </div>
-            <!-- Banner Left Box Content-->
-            <div class="banner__left__box__content">
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-            </div>
-            <!-- Banner Left Box Read-->
-            <div class="banner__left__box__read">
-                <div class="banner__left__box__read__more">
+    @if (Model.articles.Any())
+    {
+        <div class="banner__left">
+            <!-- Banner Left Box-->
+            <div class="banner__left__box">
+                <!-- Banner Left Box Img-->
+                <div class="banner__left__box__img">
                     <a href="#">
-                        <h4>Read More</h4>
+                        <img src="~/Article_Image/@Model.articles[0].AriticleId/@Model.articles[0].Avatar" alt="">
                     </a>
                 </div>
-                <div class="banner__left__box__read__cham">
-                    <span>.</span>
+                <!-- Banner Left Box Link-->
+                <div class="banner__left__box__link">
+                    <a href="#">
+                        <img src="~/img/logo-banner.png" alt="">
+                        <h4>Lorem ipsum dolor sit amet </h4>
+                    </a>
                 </div>
-                <div class="banner__left__box__read__minute">
-                    <span> 11 min read</span>
+                <!-- Banner Left Box Title-->
+                <div class="banner__left__box__title">
+                    <a asp-controller="WatchArticle" asp-action="Index" asp-route-id="@Model.articles[0].AriticleId">
+                        <h2>@Model.articles[0].Title</h2>
+                    </a>
                 </div>
-            </div>
-            <!-- Banner Left Box Like -->
-            <div class="banner__left__box__like">
-                <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                <p>17K</p>
-            </div>
-        </div><!-- Banner Left Box-->
-    </div><!-- Banner Left-->
-    <!-- Banner Middle-->
-    <div class="banner__middle">
-        <!-- Banner Middle Box -->
-        <div class="banner__middle__box">
-            <!-- Banner Middle Box Item-->
-            <div class="banner__middle__box__item">
-                <!-- Banner Middle Box Item Left-->
-                <div class="banner__middle__box__item__left">
-                    <!-- Banner Middle Box Item Left Link-->
-                    <div class="banner__middle__box__item__left__link">
+                <!-- Banner Left Box Content-->
+                <div class="banner__left__box__content">
+                    <p></p>
+                </div>
+                <!-- Banner Left Box Read-->
+                <div class="banner__left__box__read">
+                    <div class="banner__left__box__read__more">
                         <a href="#">
-                            <img src="~/img/logo-banner.png" alt="">
-                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <h4>Published</h4>
                         </a>
                     </div>
-                    <!-- Banner Middle Box Item Left Title-->
-                    <div class="banner__middle__box__item__left__title">
-                        <a href="#">
-                            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                        </a>
+                    <div class="banner__left__box__read__cham">
+                        <span>.</span>
                     </div>
-                    <!-- Banner Middle Box Item Left Day-->
-                    <div class="banner__middle__box__item__left__day">
-                        <div class="banner__middle__box__item__left__day__month">
-                            <h4>Nov 9</h4>
-                        </div>
-                        <div class="banner__middle__box__item__left__day__cham">
-                            <span>.</span>
-                        </div>
-                        <div class="banner__middle__box__item__left__day__minute">
-                            <span> 7 min read</span>
-                        </div>
+                    <div class="banner__left__box__read__minute">
+                        <span>@DateTime.Parse(@Model.articles[0].Date.ToString()).ToString("dddd, dd MMMM yyyy")</span>
                     </div>
-                    <!-- Banner Middle Box Item Left Like -->
-                    <div class="banner__middle__box__item__left__like">
-                        <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                        <p>10K</p>
-                    </div>
-                </div><!-- Banner Middle Box Item Left -->
-                <!-- Banner Middle Box Item Right -->
-                <div class="banner__middle__box__item__right">
-                    <a href="#">
-                        <img src="~/img/img-middle-banner.png" alt="">
-                    </a>
-                </div><!-- Banner Middle Box Item Right-->
-            </div><!-- Banner Middle Box Item-->
-            <!-- Banner Middle Box Item-->
-            <div class="banner__middle__box__item">
-                <!-- Banner Middle Box Item Left-->
-                <div class="banner__middle__box__item__left">
-                    <!-- Banner Middle Box Item Left Link-->
-                    <div class="banner__middle__box__item__left__link">
-                        <a href="#">
-                            <img src="~/img/logo-banner.png" alt="">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </a>
-                    </div>
-                    <!-- Banner Middle Box Item Left Title-->
-                    <div class="banner__middle__box__item__left__title">
-                        <a href="#">
-                            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                        </a>
-                    </div>
-                    <!-- Banner Middle Box Item Left Day-->
-                    <div class="banner__middle__box__item__left__day">
-                        <div class="banner__middle__box__item__left__day__month">
-                            <h4>Nov 9</h4>
-                        </div>
-                        <div class="banner__middle__box__item__left__day__cham">
-                            <span>.</span>
-                        </div>
-                        <div class="banner__middle__box__item__left__day__minute">
-                            <span> 7 min read</span>
-                        </div>
-                    </div>
-                    <!-- Banner Middle Box Item Left Like -->
-                    <div class="banner__middle__box__item__left__like">
-                        <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                        <p>10K</p>
-                    </div>
-                </div><!-- Banner Middle Box Item Left -->
-                <!-- Banner Middle Box Item Right -->
-                <div class="banner__middle__box__item__right">
-                    <a href="#">
-                        <img src="~/img/img-middle-banner.png" alt="">
-                    </a>
-                </div><!-- Banner Middle Box Item Right-->
-            </div><!-- Banner Middle Box Item-->
-            <!-- Banner Middle Box Item-->
-            <div class="banner__middle__box__item">
-                <!-- Banner Middle Box Item Left-->
-                <div class="banner__middle__box__item__left">
-                    <!-- Banner Middle Box Item Left Link-->
-                    <div class="banner__middle__box__item__left__link">
-                        <a href="#">
-                            <img src="~/img/logo-banner.png" alt="">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </a>
-                    </div>
-                    <!-- Banner Middle Box Item Left Title-->
-                    <div class="banner__middle__box__item__left__title">
-                        <a href="#">
-                            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                        </a>
-                    </div>
-                    <!-- Banner Middle Box Item Left Day-->
-                    <div class="banner__middle__box__item__left__day">
-                        <div class="banner__middle__box__item__left__day__month">
-                            <h4>Nov 9</h4>
-                        </div>
-                        <div class="banner__middle__box__item__left__day__cham">
-                            <span>.</span>
-                        </div>
-                        <div class="banner__middle__box__item__left__day__minute">
-                            <span> 7 min read</span>
-                        </div>
-                    </div>
-                    <!-- Banner Middle Box Item Left Like -->
-                    <div class="banner__middle__box__item__left__like">
-                        <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                        <p>10K</p>
-                    </div>
-                </div><!-- Banner Middle Box Item Left -->
-                <!-- Banner Middle Box Item Right -->
-                <div class="banner__middle__box__item__right">
-                    <a href="#">
-                        <img src="~/img/img-middle-banner.png" alt="">
-                    </a>
-                </div><!-- Banner Middle Box Item Right-->
-            </div><!-- Banner Middle Box Item-->
-            <!-- Banner Middle Box Item-->
-            <div class="banner__middle__box__item">
-                <!-- Banner Middle Box Item Left-->
-                <div class="banner__middle__box__item__left">
-                    <!-- Banner Middle Box Item Left Link-->
-                    <div class="banner__middle__box__item__left__link">
-                        <a href="#">
-                            <img src="~/img/logo-banner.png" alt="">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </a>
-                    </div>
-                    <!-- Banner Middle Box Item Left Title-->
-                    <div class="banner__middle__box__item__left__title">
-                        <a href="#">
-                            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                        </a>
-                    </div>
-                    <!-- Banner Middle Box Item Left Day-->
-                    <div class="banner__middle__box__item__left__day">
-                        <div class="banner__middle__box__item__left__day__month">
-                            <h4>Nov 9</h4>
-                        </div>
-                        <div class="banner__middle__box__item__left__day__cham">
-                            <span>.</span>
-                        </div>
-                        <div class="banner__middle__box__item__left__day__minute">
-                            <span> 7 min read</span>
-                        </div>
-                    </div>
-                    <!-- Banner Middle Box Item Left Like -->
-                    <div class="banner__middle__box__item__left__like">
-                        <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                        <p>10K</p>
-                    </div>
-                </div><!-- Banner Middle Box Item Left -->
-                <!-- Banner Middle Box Item Right -->
-                <div class="banner__middle__box__item__right">
-                    <a href="#">
-                        <img src="~/img/img-middle-banner.png" alt="">
-                    </a>
-                </div><!-- Banner Middle Box Item Right-->
-            </div><!-- Banner Middle Box Item-->
-        </div><!-- Banner Middle Box-->
-    </div><!-- Banner Middle-->
+                </div>
+                <!-- Banner Left Box Like -->
+                <div class="banner__left__box__like">
+                    <span class="thumb thumbs-up"><i class="fas fa-sign-language"></i></span>
+                    <p>@Model.articles[0].Like</p>
+                </div>
+            </div><!-- Banner Left Box-->
+        </div><!-- Banner Left-->
+        <!-- Banner Middle-->
+        <div class="banner__middle">
+            <!-- Banner Middle Box -->
+            <div class="banner__middle__box">
+                <!-- Banner Middle Box Item-->
+                @for (int i = 1; i < Model.articles.Count; i++)
+                {
+                    <div class="banner__middle__box__item">
+                        <!-- Banner Middle Box Item Left-->
+                        <div class="banner__middle__box__item__left">
+                            <!-- Banner Middle Box Item Left Link-->
+                            <div class="banner__middle__box__item__left__link">
+                                <a href="#">
+                                    <img src="~/img/logo-banner.png" alt="">
+                                    <h4>medium articles</h4>
+                                </a>
+                            </div>
+                            <!-- Banner Middle Box Item Left Title-->
+                            <div class="banner__middle__box__item__left__title">
+                                <a asp-controller="WatchArticle" asp-action="Index" asp-route-id="@Model.articles[i].AriticleId">
+                                    <h2>@Model.articles[i].Title</h2>
+                                </a>
+                            </div>
+                            <!-- Banner Middle Box Item Left Day-->
+                            <div class="banner__middle__box__item__left__day">
+                                <div class="banner__middle__box__item__left__day__month">
+                                    <h4>Published</h4>
+                                </div>
+                                <div class="banner__middle__box__item__left__day__cham">
+                                    <span>.</span>
+                                </div>
+                                <div class="banner__middle__box__item__left__day__minute">
+                                    <span>@DateTime.Parse(@Model.articles[i].Date.ToString()).ToString("dddd, dd MMMM yyyy")</span>
+                                </div>
+                            </div>
+                            <!-- Banner Middle Box Item Left Like -->
+                            <div class="banner__middle__box__item__left__like">
+                                <span class="thumb thumbs-up"><i class="fas fa-sign-language"></i></span>
+                                <p>@Model.articles[i].Like</p>
+                            </div>
+                        </div><!-- Banner Middle Box Item Left -->
+                        <!-- Banner Middle Box Item Right -->
+                        <div class="banner__middle__box__item__right">
+                            <a href="#">
+                                @if (Model.articles[i].Avatar != null)
+                                {
+                                    <img src="~/Article_Image/@Model.articles[i].AriticleId/@Model.articles[i].Avatar" alt="">
+                                }
+                            </a>
+                        </div><!-- Banner Middle Box Item Right-->
+                    </div><!-- Banner Middle Box Item-->
+                }
+            </div><!-- Banner Middle Box-->
+        </div><!-- Banner Middle-->
+    }
     <!-- Banner Right-->
     <div class="banner__right">
         <!-- Banner Right Box -->
         <div class="banner__right__box">
             <p>New Member</p>
             <div class="banner__right__box__all scrollbar" id="style-1">
-                <!-- Banner Right Box Item -->
-                <div class="banner__right__box__all__item">
-                    <!-- Banner Right Box Item Content-->
-                    <div class="banner__right__box__all__item__content">
-                        <a href="#">
-                            <img src="~/img/obama.png" alt="">
-                        </a>
-                        <div class="banner__right__box__all__item__content__middle">
-                            <a href="#">
-                                <h2>Barack Obama</h2>
-                                <h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa fugit vel possimus
-                                    perspiciatis eos culpa doloremque.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="banner__right__box__all__item__content__right">
-                            <button>Follow</button>
-                        </div>
-                    </div>
-                </div><!-- Banner Right Box Item -->
-                <!-- Banner Right Box Item -->
-                <div class="banner__right__box__all__item">
-                    <!-- Banner Right Box Item Content-->
-                    <div class="banner__right__box__all__item__content">
-                        <a href="#">
-                            <img src="~/img/obama.png" alt="">
-                        </a>
-                        <div class="banner__right__box__all__item__content__middle">
-                            <a href="#">
-                                <h2>Barack Obama</h2>
-                                <h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa fugit vel possimus
-                                    perspiciatis eos culpa doloremque.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="banner__right__box__all__item__content__right">
-                            <button>Follow</button>
-                        </div>
-                    </div>
-                </div><!-- Banner Right Box Item -->
-                <!-- Banner Right Box Item -->
-                <div class="banner__right__box__all__item">
-                    <!-- Banner Right Box Item Content-->
-                    <div class="banner__right__box__all__item__content">
-                        <a href="#">
-                            <img src="~/img/obama.png" alt="">
-                        </a>
-                        <div class="banner__right__box__all__item__content__middle">
-                            <a href="#">
-                                <h2>Barack Obama</h2>
-                                <h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa fugit vel possimus
-                                    perspiciatis eos culpa doloremque.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="banner__right__box__all__item__content__right">
-                            <button>Follow</button>
-                        </div>
-                    </div>
-                </div><!-- Banner Right Box Item -->
-                <!-- Banner Right Box Item -->
-                <div class="banner__right__box__all__item">
-                    <!-- Banner Right Box Item Content-->
-                    <div class="banner__right__box__all__item__content">
-                        <a href="#">
-                            <img src="~/img/obama.png" alt="">
-                        </a>
-                        <div class="banner__right__box__all__item__content__middle">
-                            <a href="#">
-                                <h2>Barack Obama</h2>
-                                <h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa fugit vel possimus
-                                    perspiciatis eos culpa doloremque.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="banner__right__box__all__item__content__right">
-                            <button>Follow</button>
-                        </div>
-                    </div>
-                </div><!-- Banner Right Box Item -->
-                <!-- Banner Right Box Item -->
-                <div class="banner__right__box__all__item">
-                    <!-- Banner Right Box Item Content-->
-                    <div class="banner__right__box__all__item__content">
-                        <a href="#">
-                            <img src="~/img/obama.png" alt="">
-                        </a>
-                        <div class="banner__right__box__all__item__content__middle">
-                            <a href="#">
-                                <h2>Barack Obama</h2>
-                                <h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa fugit vel possimus
-                                    perspiciatis eos culpa doloremque.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="banner__right__box__all__item__content__right">
-                            <button>Follow</button>
-                        </div>
-                    </div>
-                </div><!-- Banner Right Box Item -->
-                <!-- Banner Right Box Item -->
-                <div class="banner__right__box__all__item">
-                    <!-- Banner Right Box Item Content-->
-                    <div class="banner__right__box__all__item__content">
-                        <a href="#">
-                            <img src="~/img/obama.png" alt="">
-                        </a>
-                        <div class="banner__right__box__all__item__content__middle">
-                            <a href="#">
-                                <h2>Barack Obama</h2>
-                                <h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa fugit vel possimus
-                                    perspiciatis eos culpa doloremque.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="banner__right__box__all__item__content__right">
-                            <button>Follow</button>
-                        </div>
-                    </div>
-                </div><!-- Banner Right Box Item -->
-                <!-- Banner Right Box Item -->
-                <div class="banner__right__box__all__item">
-                    <!-- Banner Right Box Item Content-->
-                    <div class="banner__right__box__all__item__content">
-                        <a href="#">
-                            <img src="~/img/obama.png" alt="">
-                        </a>
-                        <div class="banner__right__box__all__item__content__middle">
-                            <a href="#">
-                                <h2>Barack Obama</h2>
-                                <h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa fugit vel possimus
-                                    perspiciatis eos culpa doloremque.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="banner__right__box__all__item__content__right">
-                            <button>Follow</button>
-                        </div>
-                    </div>
-                </div><!-- Banner Right Box Item -->
-                <!-- Banner Right Box Item -->
-                <div class="banner__right__box__all__item">
-                    <!-- Banner Right Box Item Content-->
-                    <div class="banner__right__box__all__item__content">
-                        <a href="#">
-                            <img src="~/img/obama.png" alt="">
-                        </a>
-                        <div class="banner__right__box__all__item__content__middle">
-                            <a href="#">
-                                <h2>Barack Obama</h2>
-                                <h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa fugit vel possimus
-                                    perspiciatis eos culpa doloremque.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="banner__right__box__all__item__content__right">
-                            <button>Follow</button>
-                        </div>
-                    </div>
-                </div><!-- Banner Right Box Item -->
-                <!-- Banner Right Box Item -->
-                <div class="banner__right__box__all__item">
-                    <!-- Banner Right Box Item Content-->
-                    <div class="banner__right__box__all__item__content">
-                        <a href="#">
-                            <img src="~/img/obama.png" alt="">
-                        </a>
-                        <div class="banner__right__box__all__item__content__middle">
-                            <a href="#">
-                                <h2>Barack Obama</h2>
-                                <h4>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa fugit vel possimus
-                                    perspiciatis eos culpa doloremque.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="banner__right__box__all__item__content__right">
-                            <button>Follow</button>
-                        </div>
-                    </div>
-                </div><!-- Banner Right Box Item -->
             </div>
-            <a href="#">See More</a>
+            <span id="btn_Show_User">See More</span>
         </div><!-- Banner Right Box-->
     </div><!-- Banner Right-->
 </div><!-- Banner -->
@@ -432,301 +127,28 @@
     <div class="new__left">
         <!-- New Left Box -->
         <div class="new__left__box">
-            <!-- New Left Box Item-->
-            <div class="new__left__box__item">
-                <!-- New Left Box Item Left-->
-                <div class="new__left__box__item__left">
-                    <!-- New Left Box Item Left Link-->
-                    <div class="new__left__box__item__left__link">
-                        <a href="#">
-                            <img src="~/img/logo-banner.png" alt="">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </a>
-                    </div>
-                    <!-- New Left Box Item Left Title-->
-                    <div class="new__left__box__item__left__title">
-                        <a href="#">
-                            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit sit amet</h2>
-                        </a>
-                    </div>
-                    <!-- New Left Box Item Left Content-->
-                    <div class="new__left__box__item__left__content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde voluptates
-                            doloremque
-                        </p>
-                    </div>
-                    <!-- New Left Box Item Left Time-->
-                    <div class="new__left__box__item__left__time">
-                        <!-- New Left Box Item Left Time Left-->
-                        <div class="new__left__box__item__left__time__left">
-                            <!-- New Left Box Item Left Time Left Day-->
-                            <div class="new__left__box__item__left__time__left__day">
-                                <div class="new__left__box__item__left__time__left__day__month">
-                                    <h4>Nov 11</h4>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__cham">
-                                    <span>.</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__minute">
-                                    <span> 6 min read</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__cham">
-                                    <span>.</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__name">
-                                    <span>Editors'Pick</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- New Left Box Item Left Like-->
-                    <div class="new__left__box__item__left__like">
-                        <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                        <p>10K</p>
-                    </div>
-                </div><!-- New Left Box Item Left -->
-                <!-- New Left Box Item Right -->
-                <div class="new__left__box__item__right">
-                    <a href="#">
-                        <img src="~/img/img-new.jpeg" alt="">
-                    </a>
-                </div><!--  New Left Box Item Right-->
-            </div><!-- New Left Box Item -->
-            <!-- New Left Box Item-->
-            <div class="new__left__box__item">
-                <!-- New Left Box Item Left-->
-                <div class="new__left__box__item__left">
-                    <!-- New Left Box Item Left Link-->
-                    <div class="new__left__box__item__left__link">
-                        <a href="#">
-                            <img src="~/img/logo-banner.png" alt="">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </a>
-                    </div>
-                    <!-- New Left Box Item Left Title-->
-                    <div class="new__left__box__item__left__title">
-                        <a href="#">
-                            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit sit amet</h2>
-                        </a>
-                    </div>
-                    <!-- New Left Box Item Left Content-->
-                    <div class="new__left__box__item__left__content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde voluptates
-                            doloremque
-                        </p>
-                    </div>
-                    <!-- New Left Box Item Left Time-->
-                    <div class="new__left__box__item__left__time">
-                        <!-- New Left Box Item Left Time Left-->
-                        <div class="new__left__box__item__left__time__left">
-                            <!-- New Left Box Item Left Time Left Day-->
-                            <div class="new__left__box__item__left__time__left__day">
-                                <div class="new__left__box__item__left__time__left__day__month">
-                                    <h4>Nov 11</h4>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__cham">
-                                    <span>.</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__minute">
-                                    <span> 6 min read</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__cham">
-                                    <span>.</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__name">
-                                    <span>Editors'Pick</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- New Left Box Item Left Like-->
-                    <div class="new__left__box__item__left__like">
-                        <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                        <p>10K</p>
-                    </div>
-                </div><!-- New Left Box Item Left -->
-                <!-- New Left Box Item Right -->
-                <div class="new__left__box__item__right">
-                    <a href="#">
-                        <img src="~/img/img-new.jpeg" alt="">
-                    </a>
-                </div><!--  New Left Box Item Right-->
-            </div><!-- New Left Box Item -->
-            <!-- New Left Box Item-->
-            <div class="new__left__box__item">
-                <!-- New Left Box Item Left-->
-                <div class="new__left__box__item__left">
-                    <!-- New Left Box Item Left Link-->
-                    <div class="new__left__box__item__left__link">
-                        <a href="#">
-                            <img src="~/img/logo-banner.png" alt="">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </a>
-                    </div>
-                    <!-- New Left Box Item Left Title-->
-                    <div class="new__left__box__item__left__title">
-                        <a href="#">
-                            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit sit amet</h2>
-                        </a>
-                    </div>
-                    <!-- New Left Box Item Left Content-->
-                    <div class="new__left__box__item__left__content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde voluptates
-                            doloremque
-                        </p>
-                    </div>
-                    <!-- New Left Box Item Left Time-->
-                    <div class="new__left__box__item__left__time">
-                        <!-- New Left Box Item Left Time Left-->
-                        <div class="new__left__box__item__left__time__left">
-                            <!-- New Left Box Item Left Time Left Day-->
-                            <div class="new__left__box__item__left__time__left__day">
-                                <div class="new__left__box__item__left__time__left__day__month">
-                                    <h4>Nov 11</h4>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__cham">
-                                    <span>.</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__minute">
-                                    <span> 6 min read</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__cham">
-                                    <span>.</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__name">
-                                    <span>Editors'Pick</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- New Left Box Item Left Like-->
-                    <div class="new__left__box__item__left__like">
-                        <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                        <p>10K</p>
-                    </div>
-                </div><!-- New Left Box Item Left -->
-                <!-- New Left Box Item Right -->
-                <div class="new__left__box__item__right">
-                    <a href="#">
-                        <img src="~/img/img-new.jpeg" alt="">
-                    </a>
-                </div><!--  New Left Box Item Right-->
-            </div><!-- New Left Box Item -->
-            <!-- New Left Box Item-->
-            <div class="new__left__box__item">
-                <!-- New Left Box Item Left-->
-                <div class="new__left__box__item__left">
-                    <!-- New Left Box Item Left Link-->
-                    <div class="new__left__box__item__left__link">
-                        <a href="#">
-                            <img src="~/img/logo-banner.png" alt="">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                        </a>
-                    </div>
-                    <!-- New Left Box Item Left Title-->
-                    <div class="new__left__box__item__left__title">
-                        <a href="#">
-                            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit sit amet</h2>
-                        </a>
-                    </div>
-                    <!-- New Left Box Item Left Content-->
-                    <div class="new__left__box__item__left__content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde voluptates
-                            doloremque
-                        </p>
-                    </div>
-                    <!-- New Left Box Item Left Time-->
-                    <div class="new__left__box__item__left__time">
-                        <!-- New Left Box Item Left Time Left-->
-                        <div class="new__left__box__item__left__time__left">
-                            <!-- New Left Box Item Left Time Left Day-->
-                            <div class="new__left__box__item__left__time__left__day">
-                                <div class="new__left__box__item__left__time__left__day__month">
-                                    <h4>Nov 11</h4>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__cham">
-                                    <span>.</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__minute">
-                                    <span> 6 min read</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__cham">
-                                    <span>.</span>
-                                </div>
-                                <div class="new__left__box__item__left__time__left__day__name">
-                                    <span>Editors'Pick</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- New Left Box Item Left Like-->
-                    <div class="new__left__box__item__left__like">
-                        <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                        <p>10K</p>
-                    </div>
-                </div><!-- New Left Box Item Left -->
-                <!-- New Left Box Item Right -->
-                <div class="new__left__box__item__right">
-                    <a href="#">
-                        <img src="~/img/img-new.jpeg" alt="">
-                    </a>
-                </div><!--  New Left Box Item Right-->
-            </div><!-- New Left Box Item -->
         </div><!-- New Left Box -->
     </div><!-- New Left -->
     <!-- New Right -->
     <div class="new__right">
+        <div class="boxSearching">
+            Tìm kiếm: 
+            <input type="text" name="searchData" id="searchData" />
+        </div>
         <div class="new__right__box">
-            <div class="new__right__box__item">
-                <span>
-                    <i class="devicon-csharp-plain colored"></i>
-                    <h4>C#</h4>
-                </span>
-            </div>
-            <div class="new__right__box__item">
-                <span href="#">
-                    <i class="devicon-sass-original colored"></i>
-                    <h4>SASS</h4>
-                </span>
-            </div>
-            <div class="new__right__box__item">
-                <span>
-                    <i class="devicon-bootstrap-plain colored"></i>
-                    <h4>Bootstrap</h4>
-                </span>
-            </div>
-            <div class="new__right__box__item">
-                <span>
-                    <i class="devicon-html5-plain colored"></i>
-                    <h4>HTML</h4>
-                </span>
-            </div>
-            <div class="new__right__box__item">
-                <span href="#">
-                    <!-- in your body -->
-                    <i class="devicon-mysql-plain colored"></i>
-                    <h4>MySQL</h4>
-                </span>
-            </div>
-            <div class="new__right__box__item">
-                <span>
-                    <!-- in your body -->
-                    <i class="devicon-visualstudio-plain colored"></i>
-                    <h4>Visual Studio</h4>
-                </span>
-            </div>
-            <div class="new__right__box__item">
-                <span>
-                    <!-- in your body -->
-                    <i class="devicon-github-plain colored"></i>
-                    <h4>GitHub</h4>
-                </span>
-            </div>
-            <div class="new__right__box__item programing_active">
+            @if (Model.articleTypes.Any())
+            {
+                @foreach (var item in Model.articleTypes)
+                {
+                    <div class="new__right__box__item" articleType="@item.ArticleTypeId">
+                        <span>
+                            @Html.Raw(item.image)
+                            <h4>@item.Name</h4>
+                        </span>
+                    </div>
+                }
+            }
+            <div class="new__right__box__item programing_active" articleType="other">
                 <span>
                     <i class="devicon-slack-plain colored"></i>
                     <h4>Other</h4>

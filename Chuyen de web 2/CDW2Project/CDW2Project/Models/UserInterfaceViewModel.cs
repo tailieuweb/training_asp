@@ -7,6 +7,7 @@ namespace CDW2Project.Models
 {
     public class UserInterfaceViewModel
     {
+        public string id { set; get; }
         public string fullName { set; get; }
         public string avatar { set; get; }
         public IList<string> roles { set; get; }

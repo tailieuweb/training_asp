@@ -25,11 +25,12 @@ namespace CDW2Project.ViewComponents
             UserInterfaceViewModel model = new UserInterfaceViewModel();
             if (result != null)
             {
+                model.id = result.Id;
                 model.fullName = result.FullName;
                 model.roles = await _userManager.GetRolesAsync(result);
                 if (result.Image != null)
                 {
-                    model.avatar = "/User_Image/"+$"{result.Id}"+$"{result.Image}";
+                    model.avatar = "/User_Image/"+$"{result.Id}/"+$"{result.Image}";
                 }
                 else
                 {

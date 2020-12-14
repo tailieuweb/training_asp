@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model PersonalUserViewModel
+<div class="avatar">
+    <div class="dropdown">
+        <button class="btn btn-primary btnChangeAvatar" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+            @if (string.IsNullOrEmpty(Model.Image))
+            {
+                <img src="/img/emty_avatar.jpg" alt="">
+            }
+            else
+            {
+                <img src="/User_Image/@Model.Id/@Model.Image" alt="">
+            }
+        </button>
+        <div class="dropdown-menu scrollbar" aria-labelledby="dropdownMenuButton" id="style-1">
+            <a class="dropdown-item" href=""><i class="far fa-eye"></i> View avatar</a>
+            <a class="dropdown-item" href="">
+                <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                <label for="uploadPersonalFile">Upload Image</label>
+                <input id="uploadPersonalFile" name="uploadPersonalFile" style="display:none;" type="file">
+            </a>
+        </div>
+    </div>
+    <h1>@Model.FullName</h1>
+</div><!-- Avatar -->
+<!-- Language -->
+<div class="language">
+    <div class="language__box">
+        @foreach (var item in Model.articleTypes)
+        {
+            <div class="language__box__item" articleTypeId="@item.ArticleTypeId">
+                <div>
+                    @Html.Raw(item.image)
+                    <h4>@item.Name</h4>
+                </div>
+            </div>
+        }
+        <div class="language__box__item active" articleTypeId="other">
+            <div>
+                <i class="devicon-slack-plain colored"></i>
+                <h4>Other</h4>
+            </div>
+        </div>
+    </div>
+</div><!-- Language -->
+<!-- Information -->
+<div class="info">
+    <!-- Information Left-->
+    <div class="info__left">
+        <div class="info__left__box">
+            <h2>giới thiệu</h2>
+            <div class="info__left__box__title">
+                <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i>Live in TPHCM</li>
+                </ul>
+            </div>
+            <a href="/EditPasswordUser/Index/@Model.Id" class="info__left__box__content">
+                <p>edit Password</p>
+            </a>
+            <a href="/EditInfoUser/Index/@Model.Id" class="info__left__box__content">
+                <p>edit Information</p>
+            </a>
+        </div>
+    </div><!-- Information Left-->
+    <!-- Information Right-->
+    <div class="info__right">
+        <!-- Information Right Box-->
+        <div class="info__right__box scrollbar" id="style-1">
+            <div class="scroll_box">
+
+            </div>
+        </div><!-- Information Right Box-->
+    </div><!-- Information Right-->
+</div>
+@section PersonalPage
+{
+   <script src="~/js/PersonalPage/Index.js"></script>
+}

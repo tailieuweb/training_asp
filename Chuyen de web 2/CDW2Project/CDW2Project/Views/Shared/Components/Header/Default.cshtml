@@ -1,32 +1,19 @@
-﻿@* Header - start*@
-@model UserInterfaceViewModel
-<header class="header">
+﻿<header class="header">
     <!-- Header Left-->
     <div class="header__left">
         <!-- Header Left Logo-->
         <div class="header__left__logo">
-            <a href="#">
-                <img src="~/img/logo-medium.png" alt="" />
+            <a href="/Home/Index">
+                <img src="~/img/logo-medium.png" alt="">
             </a>
         </div>
         <!-- Header Left Good-->
-        <div class="header__left__good">Good morning</div>
-    </div>
-    <!-- Header Left-->
+        <div class="header__left__good">
+            Good morning
+        </div>
+    </div><!-- Header Left-->
     <!-- Header Right-->
     <div class="header__right">
-        <!-- Header Right Search-->
-        <div class="header__right__search">
-            <a href="#">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </a>
-        </div>
-        <!-- Header Right Book -->
-        <div class="header__right__book">
-            <a href="#">
-                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-            </a>
-        </div>
         <!-- Header Right Bell-->
         <div class="header__right__bell">
             <a href="#">
@@ -41,17 +28,12 @@
         <div class="header__right__account" aria-hidden="false">
             <!-- <button><img src="./asset/img/avatar.jpg" alt=""></button> -->
             <div class="dropdown">
-                <button class="btn btn-primary"
-                        type="button"
-                        id="dropdownMenuButton"
-                        data-toggle="dropdown">
-                    <img src="@Model.avatar" alt="" />
+                <button class="btn btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                    <img src="@Model.avatar" alt="">
                 </button>
-                <div class="dropdown-menu scrollbar"
-                     aria-labelledby="dropdownMenuButton"
-                     id="style-1">
-                    <a class="dropdown-item" href="#">
-                        <img src="@Model.avatar" alt="" />
+                <div class="dropdown-menu scrollbar" aria-labelledby="dropdownMenuButton" id="style-1">
+                    <a class="dropdown-item" asp-controller="PersonalPage" asp-action="Index" asp-route-id="@Model.id">
+                        <img src="@Model.avatar" alt="">
                         <div class="name">
                             <h4>@Model.fullName</h4>
                         </div>
@@ -69,5 +51,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </div><!-- Header Right-->
+</header><!-- Header -->

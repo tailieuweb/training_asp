@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ChangePasswordViewModel
+<div class="banner">
+    <!-- Left -->
+    <div class="left">
+        <img src="~/img/pages.png" alt="">
+    </div><!-- Left -->
+    <!-- Right -->
+    <div class="right">
+        <!-- Right Login-->
+        <div class="right__login">
+            <!-- Right Login Title -->
+            <div class="right__login__title">
+                <span>Login</span>
+            </div><!-- Right Login Title -->
+            <!-- Right Login Content -->
+            <div class="right__login__content">
+                <!-- Right Login Content Box -->
+                <div class="right__login__content__box">
+                    <!-- Right Login Content Box Item -->
+                    <div class="right__login__content__box__item">
+                        <!-- Right Login Content Box Item Left-->
+                        <div class="right__login__content__box__item__left">
+                            <img src="/img/key.png" alt="">
+                        </div>
+                        <!-- Right Login Content Box Item Middle-->
+                        <div class="right__login__content__box__item__middle">
+                            <h4 class="right__login__content__box__item__middle__h4">change password</h4>
+                            <p class="right__login__content__box__item__middle__p">
+                                You should use a strong password that you
+                                haven't used anywhere else
+                            </p>
+                        </div>
+                        <!-- Right Login Content Box Item Right-->
+                        <div class="right__login__content__box__item__right">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseLogin"
+                                    aria-expanded="false" aria-controls="collapseLogin">
+                                Edit
+                            </button>
+                        </div>
+                    </div><!-- Right Login Content Box Item -->
+                    <div class="collapse" id="collapseLogin">
+                        <div class="card-body">
+                            <form asp-action="Index" asp-controller="EditPasswordUser" method="post">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @if (ViewBag.succeeded != null)
+                                {
+                                    <div class="text-success frm-log-reg-noti">@ViewBag.succeeded</div>
+                                }
+                                @if (Model.hasPassword)
+                                {
+                                    <div style="text-align:center; margin-bottom:14px;">
+                                        <div class="form-group">
+                                            <label asp-for="currentPassword">Current password</label>
+                                            <input type="password" asp-for="currentPassword" class="form-control">
+                                        </div>
+                                        <span asp-validation-for="currentPassword" class="text-danger" style="font-size:10px"></span>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <input type="password" asp-for="currentPassword" hidden="hidden" class="form-control" value="hidden">
+                                }
+                                <div style="text-align:center; margin-bottom:14px;">
+                                    <div class="form-group">
+                                        <label asp-for="newPassword">A new password</label>
+                                        <input type="password" asp-for="newPassword" class="form-control">
+                                    </div>
+                                    <span asp-validation-for="newPassword" class="text-danger" style="font-size:10px"></span>
+                                </div>
+                                <div style="text-align:center; margin-bottom:14px;">
+                                    <div class="form-group">
+                                        <label asp-for="passwordConfirmation"></label>
+                                        <input type="password" asp-for="passwordConfirmation" class="form-control" value="" />
+                                    </div>
+                                    <span asp-validation-for="passwordConfirmation" class="text-danger" style="font-size:10px"></span>
+                                </div>
+                                <input type="text" asp-for="hasPassword" class="form-control" hidden="hidden">
+                                <a href="#">Forgot password?</a>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- Right Login Content Box -->
+            </div><!-- Right Login Content -->
+        </div><!-- Right Login-->
+    </div><!-- Right -->
+</div>

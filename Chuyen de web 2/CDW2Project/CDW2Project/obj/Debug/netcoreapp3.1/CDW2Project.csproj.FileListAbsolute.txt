@@ -91,8 +91,6 @@ D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreap
 D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\CDW2Project.genruntimeconfig.cache
 D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
 D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutLogReg.cshtml.g.cs
-D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\CDW2Project.csproj.CoreCompileInputs.cache
-D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\CDW2Project.MvcApplicationPartsAssemblyInfo.cache
 D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -171,3 +169,12 @@ D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreap
 D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\Razor\Views\Stories\Index.cshtml.g.cs
 D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\bin\Debug\netcoreapp3.1\CDW2Project.dll.config
 D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\Razor\Views\WriteArticle\Index.cshtml.g.cs
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\Razor\Views\WatchArticle\Index.cshtml.g.cs
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\Razor\Views\PersonalPage\Index.cshtml.g.cs
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\Razor\Views\PersonalPage\OtherUser.cshtml.g.cs
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\CDW2Project.csproj.CoreCompileInputs.cache
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\CDW2Project.MvcApplicationPartsAssemblyInfo.cache
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\Razor\Views\EditPasswordUser\Index.cshtml.g.cs
+D:\Trainning_asp.net\Chuyen de web 2\CDW2Project\CDW2Project\obj\Debug\netcoreapp3.1\Razor\Views\EditInfoUser\Index.cshtml.g.cs

@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model EditInfoUserViewModel
+<div class="full full-height">
+    <div class="banner">
+        <!-- Left -->
+        <div class="left">
+            <img src="" alt="">
+        </div><!-- Left -->
+        <!-- Right -->
+        <div class="right">
+            <!-- Right Login-->
+            <div class="right__login">
+                <!-- Right Login Title -->
+                <div class="right__login__title">
+                    <span>Login</span>
+                </div><!-- Right Login Title -->
+                <!-- Right Login Content -->
+                <div class="right__login__content">
+                    <!-- Right Login Content Box -->
+                    <div class="right__login__content__box">
+                        <!-- Right Login Content Box Item -->
+                        <div class="right__login__content__box__item">
+                            <!-- Right Login Content Box Item Left-->
+                            <div class="right__login__content__box__item__left">
+                                <img src="~/img/user.png" alt="">
+                            </div>
+                            <!-- Right Login Content Box Item Middle-->
+                            <div class="right__login__content__box__item__middle">
+                                <h4 class="right__login__content__box__item__middle__h4">Save your login information</h4>
+                                <p class="right__login__content__box__item__middle__p">
+                                    This information will be saved only on the
+                                    browsers and devices you choose
+                                </p>
+                            </div>
+                            <!-- Right Login Content Box Item Right-->
+                            <div class="right__login__content__box__item__right">
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseSave"
+                                        aria-expanded="false" aria-controls="collapseSave">
+                                    Edit
+                                </button>
+                            </div>
+                        </div><!-- Right Login Content Box Item -->
+                        <div class="collapse" id="collapseSave">
+                            <div class="card-body">
+                                <form asp-action="Index" asp-controller="EditInfoUser" method="post">
+                                    @if (ViewBag.succeeded != null)
+                                    {
+                                        <div class="text-success frm-log-reg-noti" style="margin-bottom:18px">@ViewBag.succeeded</div>
+                                    }
+                                    <div style="text-align:center; margin-bottom:14px;">
+                                        <div class="form-group">
+                                            <label asp-for="fullName"></label>
+                                            <input type="text" asp-for="fullName">
+                                        </div>
+                                        <span asp-validation-for="fullName" class="text-danger" style="font-size:10px"></span>
+                                    </div>
+                                    <div style="text-align:center; margin-bottom:14px;">
+                                        <div class="form-group">
+                                            <label asp-for="address"></label>
+                                            <input type="text" asp-for="address">
+                                        </div>
+                                        <span asp-validation-for="address" class="text-danger" style="font-size:10px"></span>
+                                    </div>
+                                    <input type="text" asp-for="userId" hidden="hidden">
+                                    <br>
+                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- Right Login Content Box -->
+                </div><!-- Right Login Content -->
+            </div><!-- Right Login-->
+        </div><!-- Right -->
+    </div>
+</div><!-- Full -->

@@ -2,5 +2,29 @@
   {
     "outputFile": "wwwroot/scss/EditInforUser/edit_info.css",
     "inputFile": "wwwroot/scss/EditInforUser/edit_info.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/WatchArticle/details_page.css",
+    "inputFile": "wwwroot/scss/WatchArticle/details_page.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/Header/Header.css",
+    "inputFile": "wwwroot/scss/Header/Header.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/Home/home.css",
+    "inputFile": "wwwroot/scss/Home/home.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/Stories/stories.css",
+    "inputFile": "wwwroot/scss/Stories/stories.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/PersonalPage/person_page.css",
+    "inputFile": "wwwroot/scss/PersonalPage/person_page.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/AdminHome/admin-page.css",
+    "inputFile": "wwwroot/scss/AdminHome/admin-page.scss"
   }
 ]

@@ -1,0 +1,311 @@
+@import '../base';
+@import "../mixins";
+@import "../variables";
+
+//=================== FULL ==================
+.full {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    @include primary-sans-text;
+    //=================== CLAP&COMMENT ==================
+    .clapComment {
+        height: 100vh;
+        width: 400px;
+        position: fixed;
+        z-index: 1;
+        background: $white-color;
+        padding: 8px 10px;
+
+        @include responsive-max-width(768px) {
+            width: 300px;
+        }
+
+        @include responsive-max-width(576px) {
+            width: 100%;
+            position: relative;
+            height: auto;
+        }
+
+        &__post {
+            background: $black-color;
+            width: 15%;
+            text-align: center;
+            @include rounded-corners(5px);
+            display: none;
+            margin-bottom: 5px;
+
+            &__number {
+                color: $white-color;
+            }
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        &__clap {
+            cursor: pointer;
+
+            &__icon {
+                width: 10%;
+                float: left;
+            }
+
+            &__frame {
+                width: 90%;
+            }
+        }
+
+        &__comment {
+            margin-top: 10px;
+            padding-right: 10px;
+
+            .buttonComment {
+                cursor: pointer;
+
+                .clapCommentLeft {
+                    padding-bottom: 10px;
+                }
+            }
+
+            .collapse {
+                .scrollbar {
+                    overflow: scroll;
+                    height: 63vh;
+                    overflow-x: hidden;
+
+                    .reComment {
+                        .responses {
+                            font-weight: bold;
+                            font-size: 18px;
+                            margin-bottom: 10px;
+
+                            @include responsive-max-width(768px) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .inputThought {
+                            @include border-all(1px, solid, $tro-color);
+                            padding: 10px;
+                            outline: none;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .peter {
+                        .titleRe {
+                            margin-bottom: 10px;
+
+                            &__avatar {
+                                width: 15%;
+                                float: left;
+
+                                &__img {
+                                    @include size(30px, 30px);
+                                    @include rounded-corners(100%);
+                                }
+                            }
+
+                            &__name {
+                                width: 85%;
+
+                                &__title {
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                }
+
+                                &__time {
+                                    color: $text-secondary-color;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+
+                        .watchArticle_EditBox {
+                            margin-top: 12px;
+
+                            .watchBtn {
+                                padding: 4px 6px;
+                                cursor:pointer;
+                                border-radius: 100%;
+                            }
+
+                            .editComment_btn {
+                                background: #b7ffc0;
+                            }
+
+                            .deleteComment_btn {
+                                background: #fdb9b9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #style-1::-webkit-scrollbar-track {
+            @include rounded-corners(10px);
+            background-color: $background-primary-color;
+        }
+
+        #style-1::-webkit-scrollbar {
+            width: 6px;
+            background-color: $background-primary-color;
+        }
+
+        #style-1::-webkit-scrollbar-thumb {
+            @include rounded-corners(10px);
+            background-color: $tro-color;
+        }
+    }
+    //=================== MEMBER ==================
+    .member {
+        padding: 0 10px 20px 10px;
+        margin-left: 405px;
+
+        @include responsive-max-width(768px) {
+            margin-left: 305px;
+        }
+
+        @include responsive-max-width(576px) {
+            width: 100%;
+            display: inline;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+
+            @include responsive-max-width(576px) {
+                padding: 0 10px;
+            }
+
+            &__h1 {
+                font-size: 40px;
+                font-weight: bold;
+                margin-bottom: 10px;
+
+                @include responsive-max-width(576px) {
+                    font-size: 30px;
+                }
+            }
+
+            &__span {
+                font-size: 20px;
+                color: $text-secondary-color;
+
+                @include responsive-max-width(576px) {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+
+            @include responsive-max-width(576px) {
+                padding: 0 10px;
+            }
+
+            @include responsive-max-width(375px) {
+                display: inline;
+            }
+
+            &__left {
+                width: 50%;
+
+                @include responsive-max-width(375px) {
+                    width: 100%;
+                    padding: 0 10px;
+                    margin-bottom: 5px;
+                }
+
+                &__avatar {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+
+                    img {
+                        margin-right: 10px;
+                        @include size(30px, 30px);
+                        @include rounded-corners(100%);
+                    }
+
+                    &__name {
+                        color: $black-color;
+                    }
+                }
+            }
+
+            &__middle {
+                width: 50%;
+                justify-content: flex-end;
+                display: flex;
+
+                @include responsive-max-width(375px) {
+                    width: 100%;
+                    justify-content: flex-start;
+                    padding: 0 10px;
+                }
+
+                &__month {
+                    margin-right: 6px;
+                }
+
+                &__cham {
+                    margin-right: 6px;
+                }
+            }
+            // &__right {
+            //     width: 10%;
+            // }
+        }
+
+        &__image {
+            text-align: center;
+            margin: 30px 0;
+
+            @include responsive-max-width(576px) {
+                padding: 0 10px;
+            }
+
+            @include responsive-max-width(375px) {
+                margin: 10px 0;
+            }
+
+            &__people {
+                width: 100%;
+                // @include size(500px, 350px);
+                margin-bottom: 10px;
+            }
+
+            &__description {
+                text-align: center;
+                font-size: 13px;
+                font-weight: bold;
+                color: $text-secondary-color;
+            }
+        }
+
+        &__content {
+            margin-bottom: 30px;
+            text-align: justify;
+
+            @include responsive-max-width(576px) {
+                padding: 0 10px;
+            }
+
+            &__span {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .watchArticle_Content {
+        img {
+            width: 100%;
+        }
+    }
+}

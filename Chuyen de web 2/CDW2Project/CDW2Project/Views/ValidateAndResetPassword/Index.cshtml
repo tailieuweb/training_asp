@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+@model ValidateResetPasswordViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/scss/ForgotPassword/ForgotPassword.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="ForgotPassword_Frame">
+        <div class="ForgotPassword_Frame__ConentFrame">
+            <div class="ForgotPassword_Frame__ConentFrame__imgFrame">
+                <img src="~/img/forgot.png" class="" alt="">
+            </div>
+            <div class="ForgotPassword_Frame__ConentFrame__title">
+                Forgot Your Password
+            </div>
+            <span class="ForgotPassword_Frame__ConentFrame__description">
+                Validated code send,
+                please enter your number code below to receive your password
+            </span>
+            <div class="ForgotPassword_Frame__ConentFrame__resetPassword">
+                <form asp-controller="ValidateAndResetPassword" asp-action="Index" method="post">
+                    <label asp-for="code"></label>
+                    <input asp-for="code" type="text">
+                    <span asp-validation-for="code" class="text-danger" style="color:red"></span>
+                    <label asp-for="newPassword"></label>
+                    <input asp-for="newPassword" type="password">
+                    <span asp-validation-for="newPassword" class="text-danger" style="color:red"></span>
+                    <label asp-for="confirmPassword"></label>
+                    <input asp-for="confirmPassword" type="password">
+                    <span asp-validation-for="confirmPassword" class="text-danger" style="color:red"></span>
+                    <input asp-for="email" hidden="hidden">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger", @style = "color:red;list-style:none;" })
+                    @if (ViewBag.succeeded != null)
+                    {
+                        <div class="text-danger" style="color: #7ff198">@ViewBag.succeeded</div>
+                    }
+                    <div style="display: flex; justify-content: center;">
+                        <button class="ForgotPassword_Frame__ConentFrame__numberField__ValidatedCodeBtn">Recover Password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

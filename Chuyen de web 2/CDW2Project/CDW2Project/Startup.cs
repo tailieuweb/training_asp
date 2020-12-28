@@ -48,8 +48,10 @@ namespace CDW2Project
             });
             services.AddAuthentication().AddGoogle(config =>
             {
-                config.ClientId = "75692827977-uj1ok2nqkdh59nctkm72svm5bvj6k033.apps.googleusercontent.com";
-                config.ClientSecret = "Gp7tThWa-XC_6OF_IOPL5W20";
+                //config.ClientId = "991045662343-rudbuv8qtplqek39a1r5c4j6bme1lfuh.apps.googleusercontent.com";
+                //config.ClientSecret = "O7NA66LKIhJbCrP0CGrCaLsJ";
+                config.ClientId = "991045662343-rtminlirfs5c9thben6obm6qge8jld4q.apps.googleusercontent.com";
+                config.ClientSecret = "ksszksfTyJ9tWqvee53YdQv6";
             });
             services.AddMvc(options => options.EnableEndpointRouting = false)
                 .AddJsonOptions((opt) => {
@@ -60,8 +62,15 @@ namespace CDW2Project
             {
                 opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = "sessionCookie";
+                options.IdleTimeout = TimeSpan.FromDays(5);
+                options.Cookie.IsEssential = true;
+            });
             services.AddRazorPages();
             services.AddControllersWithViews();
+            services.AddControllers().AddNewtonsoftJson();
             services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
         }
 
@@ -81,6 +90,9 @@ namespace CDW2Project
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseHttpsRedirection();
+
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthentication();
@@ -91,6 +103,9 @@ namespace CDW2Project
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Loginin}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "mvcAreaRoute",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

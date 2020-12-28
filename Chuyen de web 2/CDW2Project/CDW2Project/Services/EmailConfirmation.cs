@@ -18,7 +18,7 @@ namespace CDW2Project.Services
                 message.From.Add(new MailboxAddress("Email Verification", "doanhongthang.tdc2018@gmail.com"));
                 message.To.Add(new MailboxAddress("Dear you", toEmail));
                 message.Subject = "Confirm Email To Go Demo";
-                message.Body = new TextPart("plain") { Text = $"Click to {url}" };
+                message.Body = new TextPart("plain") { Text = $"{url}" };
                 using (var client = new SmtpClient())
                 {
                     await client.ConnectAsync("smtp.gmail.com", 587, false);

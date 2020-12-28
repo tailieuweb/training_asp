@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CDW2Project.Models;
 using DatabaseModel.CustomIdentityUser;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ModelDatabase;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace CDW2Project.Controllers
 {
+    [Authorize(Roles = "Admin,User")]
     public class EditInfoUserController : Controller
     {
         private readonly UserManager<UserAccount> _userManager;

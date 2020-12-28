@@ -1,0 +1,33 @@
+﻿.outSide-Frame
+{
+    position:fixed;
+    z-index:10;
+    display:none;
+    justify-content:center;
+    width:100%;
+    min-height:100vh;
+    align-items:center;
+    background:rgba(0, 0, 0, 0.35);
+}
+.deletedMessage-box
+{
+    padding: 12px 12px;
+    background:#fff;
+    border-radius:5px;
+    width:34%;
+}
+.deletedMessage-box .title 
+{
+    color:rgba(255, 0, 0, 0.71);
+    font-weight:600;
+    font-size:18px;
+}
+.deletedMessage-box .message {
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+    font-size: 14px;
+}
+.showDeletedFrame
+{
+    display:flex !important;
+}

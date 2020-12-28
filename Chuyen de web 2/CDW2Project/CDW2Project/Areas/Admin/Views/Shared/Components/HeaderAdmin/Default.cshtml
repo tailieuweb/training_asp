@@ -1,0 +1,44 @@
+﻿@model HeaderAdminViewModel
+<nav id="sidebar" class="">
+    <!-- logo Medium -->
+    <div class="sidebar-logo">
+        <a href="#"><img src="~/img/logo-medium.png" alt="Medium" /></a>
+    </div>
+    <!-- Profile -->
+    <div class="profile">
+        @if (Model.Image != null)
+        {
+            <img src="~/User_Image/@Model.Id/@Model.Image" alt="" class="profile-img" />
+        }
+        else
+        {
+            <img src="~/img/emty_avatar.jpg" alt="" class="profile-img" />
+        }
+        <h4 class="profile-name text-center">Nhóm K</h4>
+        <p class="profile-role text-center">@Model.FullName</p>
+    </div>
+    <!-- Menu list -->
+    <ul class="sidebar-menu">
+        <li class="menu-item text-center">
+            <a asp-controller="Home" asp-action="Index" asp-area="Admin" class="menu-item-link"><span class="-content">Users</span></a>
+        </li>
+        <li class="menu-item text-center">
+            <a href="/Home/Index" class="menu-item-link"><span class="-content">Home Page</span></a>
+        </li>
+        <li class="menu-item text-center">
+            <a asp-controller="AddArticleType" asp-action="Index" asp-area="Admin" class="menu-item-link"><span class="-content">Add Type</span></a>
+        </li>
+        <li class="menu-item text-center">
+            <a asp-controller="ArticleTypes" asp-action="Index" asp-area="Admin" class="menu-item-link"><span class="-content">Types</span></a>
+        </li>
+        <li class="menu-item text-center">
+            <a asp-controller="AddUser" asp-action="Index" asp-area="Admin" class="menu-item-link"><span class="-content">Add User</span></a>
+        </li>
+        <li class="menu-item text-center">
+            <a asp-action="Index" asp-controller="EditInfor" asp-area="Admin" asp-route-id="@Model.Id" class="menu-item-link"><span class="-content">Profile</span></a>
+        </li>
+        <li class="menu-item text-center">
+            <a asp-controller="Home" asp-action="LogoutUser" asp-area="Admin" class="menu-item-link"><span class="-content">Log out</span></a>
+        </li>
+    </ul>
+</nav>

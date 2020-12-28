@@ -31,7 +31,7 @@ namespace CDW2Project.Controllers
             return View(model);
         }
         [HttpPost]
-        public async Task<IActionResult> IndexAsync(LoginViewModel model)
+        public async Task<IActionResult> Index(LoginViewModel model)
         {
             model.externalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)

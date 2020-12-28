@@ -72,6 +72,7 @@ namespace ModelDatabase
             modelBuilder.Entity<ArticleType>(entity =>
             {
                 entity.HasKey(e => e.ArticleTypeId);
+                entity.HasIndex(e => e.Name).IsUnique(true);
                 entity.Property(e => e.Name)
                 .HasColumnName("Name")
                 .HasColumnType("nvarchar(50)")

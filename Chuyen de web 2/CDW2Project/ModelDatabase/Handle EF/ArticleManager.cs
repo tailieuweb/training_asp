@@ -96,16 +96,21 @@ namespace ModelDatabase.Handle_EF
         }
         public List<Article> GetLatestFourNewsArticles()
         {
-            var result = _context.Article.Take(4).OrderBy(x => x.Date).ToList();
+            var result = _context.Article.OrderByDescending(x => x.Date).Include(type => type.ArticleType).Where(x => x.Status == true).Take(4).ToList();
             return result;
         }
         public List<Article> GetArticlesListWithSearchType(string articleType,string searchedContent,int take,int skip)
         {
             if (articleType == "other")
             {
-               return _context.Article.Where(x => x.Title.Contains(searchedContent)).OrderByDescending(x => x.Date).Skip(skip).Take(take).ToList();
+               return _context.Article.Where(x => x.Title.Contains(searchedContent) && x.Status == true)
+                    .Include(type => type.ArticleType)
+                    .OrderByDescending(x => x.Date)
+                    .Skip(skip).Take(take)
+                    .ToList();
             }
-            var result = _context.Article.Where(x => x.Title.Contains(searchedContent) && x.ArticleArticleTypeId == articleType)
+            var result = _context.Article.Where(x => x.Title.Contains(searchedContent) && x.ArticleArticleTypeId == articleType && x.Status == true)
+                .Include(type => type.ArticleType)
                 .OrderByDescending(x => x.Date)
                 .Skip(skip)
                 .Take(take).ToList();
@@ -126,6 +131,47 @@ namespace ModelDatabase.Handle_EF
             .Skip(skip)
             .Take(take)
             .ToList();
+            return result;
+        }
+        public async Task<Article> GetArticleWithComment(string id)
+        {
+            var result = await _context.Article
+                .Include(comment => comment.CommentsList.OrderByDescending(x => x.Date))
+                    .ThenInclude(comment => comment.UserAccount)
+                .Include(user => user.UserAccount)
+                .Include(type => type.ArticleType)
+                .Where(ar => ar.AriticleId == id)
+                .FirstOrDefaultAsync();
+            return result;
+        }
+        public async Task<bool> UpdateLikeArticle(Article article)
+        {
+            bool result = true;
+            try
+            {
+                _context.Article.Attach(article);
+                _context.Entry(article).Property(x => x.Like).IsModified = true;
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception)
+            {
+                result = false;
+            }
+            return result;
+        }
+        public async Task<int?> GetLikeArticle(string id)
+        {
+           var getArticle = await _context.Article.FindAsync(id);
+           if(getArticle != null)
+            {
+                var result = getArticle.Like;
+                return result;
+            }
+            return null;
+        }
+        public List<Article> ArticlesOfUser(string id)
+        {
+            List<Article> result =  _context.Article.Where(x => x.ArticleUserId == id).OrderByDescending(date => date.Date).Include(type => type.ArticleType).ToList();
             return result;
         }
     }

@@ -3,6 +3,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model PersonalUserViewModel
+<div class="reviewImageBox">
+    <img src="~/img/avatar.jpg" alt="Alternate Text" />
+</div>
 <div class="avatar">
     <div class="dropdown">
         <button class="btn btn-primary btnChangeAvatar" type="button" id="dropdownMenuButton" data-toggle="dropdown">
@@ -16,7 +19,7 @@
             }
         </button>
         <div class="dropdown-menu scrollbar" aria-labelledby="dropdownMenuButton" id="style-1">
-            <a class="dropdown-item" href=""><i class="far fa-eye"></i> View avatar</a>
+            <span class="dropdown-item it-avatar reviewImage" style="cursor:pointer"><i class="far fa-eye"></i> View avatar</span>
         </div>
     </div>
     <h1>@Model.FullName</h1>

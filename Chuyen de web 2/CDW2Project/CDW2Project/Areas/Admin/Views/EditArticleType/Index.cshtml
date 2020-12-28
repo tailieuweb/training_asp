@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/_Layout.cshtml";
+}
+@model EditArticleType
+<div id="content">
+    <div class="container">
+        <div id="100vw"></div>
+        <!-- Sidebar button -->
+        <div class="row content-bar d-flex align-items-center">
+            <button type="button"
+                    class="btn btn-info btn-custom"
+                    id="sidebarCollapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="title-page">
+                <h2>Add Type</h2>
+            </div>
+        </div>
+        <!-- Form add user -->
+        <form class="frm" asp-controller="EditArticleType" asp-action="Index" asp-area="Admin" method="post">
+            @if (ViewBag.updateSucceeded != null)
+            {
+                <div style="color:green">@ViewBag.updateSucceeded</div>
+            }
+            @Html.ValidationSummary(false, "", new { @class = "text-danger frm-log-reg-noti" })
+            <div class="frm-item form-group">
+                <label asp-for="icon"></label>
+                <input asp-for="icon" type="text" class="form-control frm-item-input" id="icon-Field" style="margin-bottom:12px" />
+                <div style="display:flex;align-items:center">
+                    <span class="icon-checkedFrame"></span>
+                    <span class="btn-checkIcon">Check Icon</span>
+                </div>
+                <span class="text-danger iconError"></span>
+                <span class="text-danger"></span>
+            </div>
+            <div class="frm-item form-group">
+                <label asp-for="name"></label>
+                <input asp-for="name" type="text" class="form-control frm-item-input" />
+                <span class="text-danger"></span>
+            </div>
+            <div class="frm-item form-group">
+                <input asp-for="id" type="text" hidden="hidden" class="form-control frm-item-input" />
+                <span class="text-danger"></span>
+            </div>
+            <!-- Button -->
+            <button type="submit" class="frm-btn">Update Type</button>
+        </form>
+    </div>
+</div>
+@section AddArticleType{
+    <script src="~/js/EditArticleType/editArticleType.js"></script>
+}

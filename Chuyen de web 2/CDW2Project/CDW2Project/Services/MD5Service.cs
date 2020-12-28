@@ -10,7 +10,7 @@ namespace CDW2Project.Services
     public class MD5Service
     {
         private static int _numberUp = 1;
-        public string GetHashId()
+        public string GetHashId ()
         {
             Guid getGuid = Guid.NewGuid();
             string articleId = getGuid.ToString() + _numberUp++;

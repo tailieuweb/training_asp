@@ -1,12 +1,14 @@
 ﻿using DatabaseModel.CustomIdentityUser;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace ModelDatabase.EF
 {
     public class Comment
     {
+        [Key]
         public string CommentId { set; get; }
         public virtual UserAccount UserAccount {set;get;}
         public string CommentUserAccountId { set; get; }

@@ -87,7 +87,7 @@ namespace CDW2Project.Controllers
             }
             return RedirectToAction("Index", "ErrorSite");
         }
-        [HttpPut]
+        [HttpPost]
         public async Task<JsonResult> LoadArticleData([FromBody] PutArticleModel model)
         {
             if (ModelState.IsValid)

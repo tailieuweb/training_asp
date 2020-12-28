@@ -1,0 +1,230 @@
+﻿@model EditInforAdminModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/_Layout.cshtml";
+}
+@using System.Text.RegularExpressions;
+<div id="content">
+    <div class="container">
+        <div id="100vw"></div>
+        <!-- Sidebar button -->
+        <div class="row content-bar d-flex align-items-center">
+            <button type="button"
+                    class="btn btn-info btn-custom"
+                    id="sidebarCollapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="title-page">
+                <h2>Edit profile</h2>
+            </div>
+        </div>
+        <!-- Edit profile -->
+        <div class="edit-profile">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-xl-4 -left d-flex align-items-center flex-column">
+                    @if (Model.Image != null)
+                    {
+                        <img src="~/User_Image/@Model.Id/@Model.Image" alt="" class="avatar" />
+                    }
+                    else
+                    {
+                        <img src="/img/emty_avatar.jpg" alt="" class="avatar" />
+                    }
+                    <div class="uploadImg text-center">
+                        <input type="file" id="change-avt" />
+                        <label for="change-avt">
+                            <i class="fas fa-upload"></i>
+                            <span>Change Photo</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-xl-8 -right">
+                    @if (ViewBag.updateUserSucceeded != null)
+                    {
+                        <div>@ViewBag.updateUserSucceeded</div>
+                    }
+                    @if (ViewBag.addRoleSucceeded != null)
+                    {
+                        <div>@ViewBag.addRoleSucceeded</div>
+                    }
+                    @if (ViewBag.changePasswordSucceeded != null)
+                    {
+                        <div>@ViewBag.changePasswordSucceeded</div>
+                    }
+                    <form asp-controller="EditInfor" asp-action="Index" asp-route-id="@Model.Id" method="post">
+                        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                        <input type="text" asp-for="Id" hidden="hidden" />
+                        <div class="frm-item form-group">
+                            <label asp-for="FullName"></label>
+                            <input asp-for="FullName" type="text" class="form-control frm-item-input" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+                        <div class="frm-item form-group">
+                            <label asp-for="UserName"></label>
+                            <input asp-for="UserName" type="text" disabled="disabled" class="form-control frm-item-input" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                        <div class="frm-item form-group">
+                            <label asp-for="newPassword"></label>
+                            <input asp-for="newPassword" type="password" class="form-control frm-item-input" />
+                            <span asp-validation-for="newPassword" class="text-danger"></span>
+                        </div>
+                        <div class="frm-item form-group">
+                            <label asp-for="confirmPassword"></label>
+                            <input asp-for="confirmPassword" type="password" class="form-control frm-item-input" />
+                            <span asp-validation-for="confirmPassword" class="text-danger"></span>
+                        </div>
+                        <div class="frm-item form-group">
+                            <label asp-for="Address"></label>
+                            <input asp-for="Address" type="text" class="form-control frm-item-input" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+                        <div class="frm-item form-group">
+                            <label for="exampleInputEmail1">User type</label>
+                            <select asp-for="validateRole" asp-items="@(new SelectList(Model.roles,"Name","Name"))">
+                            </select>
+                            <span asp-validation-for="validateRole" class="text-danger"></span>
+                            <input asp-for="validateOldRole" hidden="hidden" />
+                        </div>
+                        <!-- Button -->
+                        <button type="submit" class="frm-btn">Add User</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Edit profile -->
+        <!-- List Posts -->
+        <div class="list-posts mt-5">
+            <div class="row flex-sm-fill">
+                <!-- item -->
+                @if (Model.ArticlesList.Count > 0)
+                {
+                    @foreach (var item in Model.ArticlesList)
+                    {
+                        <div class="col-sm-12 col-md-6 col-lg-4 mt-5 articleItem">
+                            <div class="card card-fluid -item">
+                                <div class="card-body text-center">
+                                    <div class="avatar-parent-child">
+                                        <a asp-controller="WatchArticle" asp-action="Index" asp-route-id="@item.AriticleId" class="avatar avatar-lg rounded-circle">
+                                            @if (item.Avatar != null)
+                                            {
+                                                <img alt="Image placeholder"
+                                                     src="/Article_Image/@item.AriticleId/@item.Avatar"
+                                                     class="-item__img" />
+                                            }
+                                        </a>
+                                        <span class="avatar-child avatar-badge bg-success"></span>
+                                    </div>
+                                    @if (item.Title != null)
+                                    {
+                                        if (item.Title.Length > 25)
+                                        {
+                                            <a asp-controller="WatchArticle" asp-action="Index" asp-route-id="@item.AriticleId" class="avatar avatar-lg rounded-circle">
+                                                <h2 class="d-block text-sm text-muted mt-4">
+                                                    @item.Title.Substring(0, 25)...
+                                                </h2>
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-controller="WatchArticle" asp-action="Index" asp-route-id="@item.AriticleId" class="avatar avatar-lg rounded-circle">
+                                                <h2 class="d-block text-sm text-muted mt-4">
+                                                    @item.Title
+                                                </h2>
+                                            </a>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <a asp-controller="WatchArticle" asp-action="Index" asp-route-id="@item.AriticleId" class="avatar avatar-lg rounded-circle">
+                                            <h2 class="d-block text-sm text-muted mt-4">
+                                                You have not Title
+                                            </h2>
+                                        </a>
+                                    }
+                                    <p class="d-block text-sm text-muted">
+                                        @if (@item.ArticleType != null)
+                                        {@item.ArticleType.Name}
+                                    else
+                                    { @string.Concat("Have not type", "")}
+                                    </p>
+                                    @if (item.Content != null)
+                                    {
+                                        <h5 class="h6 mb-3 mb-0">
+                                            @{string contentHandle = Regex.Replace(item.Content, @"(<([^>]+)>)", "");}
+                                            @if (contentHandle.Length > 155)
+                                            {
+                                                @string.Concat(contentHandle.Substring(0, 155), "...")
+                                            }
+                                            else
+                                            {
+                                                @contentHandle.ToString()
+                                            }
+                                        </h5>
+                                    }
+                                    else
+                                    {
+                                        <h5 class="h6 mb-3 mb-0">
+                                            you have not Content
+                                        </h5>
+                                    }
+                                    <div class="actions d-flex px-4 justify-content-center">
+                                        <button id="del-post" articleId="@item.AriticleId"
+                                                class="actions__del text-decoration-none">
+                                            Delete
+                                        </button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                }
+                }
+            </div>
+        </div>
+        <!-- /List Posts -->
+    </div>
+</div>
+<div class="outSide-Frame">
+    <div class="deletedMessage-box">
+        <div class="title">Message</div>
+        <div class="message">Pls try again!</div>
+        <div class="notify__controls">
+            <button class="btn -yes deletedMessage-btn">
+                <i class="far fa-check-circle"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<div id="hide-noti">
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body" id="noti-content">
+            <div class="notify">
+                <div class="notify__icon">
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_Tkwjw8.json"
+                                   background="transparent"
+                                   speed="1"
+                                   style="width: 150px; height: 150px"
+                                   class="notify__icon-lp"
+                                   loop
+                                   autoplay></lottie-player>
+                </div>
+                <div class="notify__content">
+                    <h3 class="-heading">Are you sure?</h3>
+                    <div class="-text">You won't be able to revert this!</div>
+                </div>
+                <div class="notify__controls">
+                    <button class="btn -yes deleteArticle-Btn">
+                        <i class="far fa-check-circle"></i>
+                    </button>
+                    <button class="btn -cancel" id="cancel-btn">
+                        <i class="far fa-times-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section EditInfor {
+    <script src="~/js/AdminEditInfor/edit-profile.js"></script>
+}

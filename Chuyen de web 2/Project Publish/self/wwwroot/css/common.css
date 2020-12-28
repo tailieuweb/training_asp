@@ -1,0 +1,91 @@
+﻿.blackFrame {
+    background: rgba(255, 255, 255,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1000;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+.showFrame{
+    display:flex;
+}
+#deleteNotification {
+    background: #fff;
+    border-radius: 5px;
+    padding: 12px 36px;
+}
+.deleteNotification__BtnNode
+{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-around;
+}
+#deleteNotification__BtnNode__cancel {
+    background: #f78888;
+}
+#deleteNotification__BtnNode__ok {
+    background: #b7ffc0;
+}
+#deleteNotification__BtnNode__cancel, #deleteNotification__BtnNode__ok {
+    cursor:pointer;
+    display: inline;
+    border-radius: 5px;
+    padding: 4px 16px;
+}
+/*Edit Comment*/
+.editFrame {
+    background: rgba(255, 255, 255,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.showEditComment {
+    display: flex;
+}
+#editFrame_Box {
+    background: #fff;
+    padding: 24px 24px;
+    border-radius:5px;
+}
+.editFrame_Box_editInput {
+    margin-bottom: 12px;
+}
+.editFrame_Box_editInput input {
+    border: 0px #000000 solid;
+    border-bottom:solid 1px #000000;
+    padding: 4px 8px;
+}
+.editFrame_Box_editInput input:focus {
+    outline:none;
+}
+#editNotification_BtnNode_ok, #editNotification_BtnNode_cancel {
+    cursor: pointer;
+    display: inline;
+    border-radius: 5px;
+    padding: 4px 16px;
+    margin-left: 18px;
+}
+#editNotification_BtnNode_ok {
+    background: #b7ffc0;
+}
+#editNotification_BtnNode_cancel {
+    background: #fdb9b9;
+}
+.error-none
+{
+    display:none;
+}
+error-block 
+{
+    display:block !important;
+}

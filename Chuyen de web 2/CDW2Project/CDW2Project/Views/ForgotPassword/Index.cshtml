@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+@model ForgetPasswordViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/scss/ForgotPassword/ForgotPassword.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="ForgotPassword_Frame">
+        <div class="ForgotPassword_Frame__ConentFrame">
+            <div class="ForgotPassword_Frame__ConentFrame__imgFrame">
+                <img src="~/img/forgot.png" class="" alt="">
+            </div>
+            <div class="ForgotPassword_Frame__ConentFrame__title">
+                Enter your email
+            </div>
+            <span class="ForgotPassword_Frame__ConentFrame__numberField">
+                <form asp-action="Index" asp-controller="ForgotPassword" method="post">
+                    <label asp-for="email"></label>
+                    <input type="email" asp-for="email">
+                    <span asp-validation-for="email" class="text-danger" style="color:red;"></span>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger", @style = "color:red;list-style:none;" })
+                    <div style="display: flex; justify-content: center;">
+                        <button type="submit" class="ForgotPassword_Frame__ConentFrame__numberField__ValidatedCodeBtn">Send code</button>
+                    </div>
+                </form>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

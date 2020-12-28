@@ -4,9 +4,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h1>Your stories</h1>
-<div>
-    <div>Tìm kiếm</div>
-    <input type="text" name="searchBox" id="searchBox" value="" />
+<div class="formSearch">
+    <span class="searchName">
+        Tìm kiếm <i class="fas fa-search"></i> :
+    </span>
+    <div class="boxSearching">
+        <input type="text" name="searchBox" id="searchBox" class="boxSearching__form" placeholder="Search" />
+    </div>
 </div>
 <!-- Menu -->
 <div class="menu">
@@ -16,9 +20,10 @@
     </ul>
 </div><!-- Menu -->
 <!-- Information -->
-<div class="info">
+<div class="info" style="border-top:none">
+
 </div><!-- Information -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalCenterTitle"
+<div class="modal fade" style="z-index:-1" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalCenterTitle"
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">

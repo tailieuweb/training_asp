@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/_Layout.cshtml";
+}
+@using X.PagedList.Mvc.Core
+@using X.PagedList
+@using Microsoft.AspNetCore.Http
+@using X.PagedList.Mvc.Core.Common
+@model IPagedList<ArticleType>
+<div id="content">
+    <div class="container">
+        <!-- Sidebar button -->
+        <div class="row content-bar d-flex align-items-center">
+            <button type="button"
+                    class="btn btn-info btn-custom"
+                    id="sidebarCollapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="title-page">
+                <h2>Types</h2>
+            </div>
+        </div>
+        <!-- SEARCH -->
+        <div class="row search">
+            <form method="get" asp-controller="ArticleTypes" asp-action="Index" asp-area="Admin" class="search-frm">
+                <input type="text"
+                       placeholder="Search..."
+                       name="search"
+                       class="search-frm-input" />
+                <button type="submit" class="search-frm-btn btn btn-info">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="row">
+            <p class="num-user">69<span>&nbsp;uers</span></p>
+        </div>
+        <!-- TABLE LIST USER -->
+        <div class="row list-users">
+            <div class="table-responsive">
+                <table class="table t">
+                    <thead>
+                        <tr class="t-head">
+                            <th scope="col">#</th>
+                            <th scope="col">Icon</th>
+                            <th scope="col">Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Item -->
+                        @if (Model != null)
+                        {
+                            @for (int i = 0; i < Model.Count; i++)
+                            {
+                                <tr class="t-item">
+                                    <th scope="row" class="align-middle text-center"></th>
+                                    <td class="t-item-img align-middle">
+                                        <span class="icon-checkedFrame border-none">
+                                            @Html.Raw(@Model[i].image)
+                                        </span>
+                                    </td>
+                                    <td class="t-item-name align-middle">@Model[i].Name</td>
+                                    <td class="t-item-action align-middle">
+                                        <a asp-controller="EditArticleType" asp-area="Admin" asp-route-id="@Model[i].ArticleTypeId" asp-action="Index">
+                                            <i class="far fa-edit"></i>
+                                        </a>
+                                        <a href="#" id="del-user" class="btn-delUser" articleTypeId="@Model[i].ArticleTypeId">
+                                            <i class="fas fa-minus-circle"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- PAGINATION -->
+        @if (Model != null)
+        {
+            @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page = page, search = ViewBag.search }), new X.PagedList.Mvc.Core.Common.PagedListRenderOptions()
+            {
+                LiElementClasses = new[] { "page-item" },
+                PageClasses = new[] { "page-link" },
+
+                UlElementClasses = new[] { "pagination" },
+                ContainerDivClasses = new[] { "Page navigation" },
+                LinkToFirstPageFormat = "<<",
+                LinkToLastPageFormat = ">>",
+                MaximumPageNumbersToDisplay = 3,
+            })
+        }
+    </div>
+</div>
+<div class="outSide-Frame">
+    <div class="deletedMessage-box">
+        <div class="title">Message</div>
+        <div class="message">Pls try again!</div>
+        <div class="notify__controls">
+            <button class="btn -yes deletedMessage-btn">
+                <i class="far fa-check-circle"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Notify -->
+<div id="hide-noti">
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body" id="noti-content">
+            <div class="notify">
+                <div class="notify__icon">
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_Tkwjw8.json"
+                                   background="transparent"
+                                   speed="1"
+                                   style="width: 150px; height: 150px"
+                                   class="notify__icon-lp"
+                                   loop
+                                   autoplay></lottie-player>
+                </div>
+                <div class="notify__content">
+                    <h3 class="-heading">Are you sure?</h3>
+                    <div class="-text">You won't be able to revert this!</div>
+                </div>
+                <div class="notify__controls">
+                    <button class="btn -yes btnYes">
+                        <i class="far fa-check-circle"></i>
+                    </button>
+                    <button class="btn -cancel" id="cancel-btn">
+                        <i class="far fa-times-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section ArticleTypes{ 
+<script src="~/js/ArticleTypes/articleTypes.js"></script>
+}

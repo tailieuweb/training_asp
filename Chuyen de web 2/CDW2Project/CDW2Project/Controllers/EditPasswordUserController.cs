@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using CDW2Project.Models;
 using DatabaseModel.CustomIdentityUser;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,6 +13,7 @@ using ModelDatabase;
 
 namespace CDW2Project.Controllers
 {
+    [Authorize(Roles = "Admin,User")]
     public class EditPasswordUserController : Controller
     {
         private readonly UserManager<UserAccount> _userManager;

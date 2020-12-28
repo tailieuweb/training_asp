@@ -8,6 +8,7 @@ using AutoMapper;
 using CDW2Project.FetchModel;
 using CDW2Project.Models;
 using DatabaseModel.CustomIdentityUser;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -17,6 +18,7 @@ using ModelDatabase.Handle_EF;
 
 namespace CDW2Project.Controllers
 {
+    [Authorize(Roles = "Admin,User")]
     public class PersonalPageController : Controller
     {
         private readonly UserManager<UserAccount> _userManager;

@@ -1,0 +1,360 @@
+@import "../_base.scss";
+@import "../_variables.scss";
+@import "../_mixins.scss";
+
+$admin-page-sidebar-bgc: #f8f6f4;
+$admin-page-content-bgc: #faf9f9;
+$admin-color: #138496;
+
+.wrapper {
+  display: flex;
+  text-decoration: none;
+  #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background-color: $admin-page-sidebar-bgc;
+    transition: all 0.3s;
+    .sidebar-logo {
+      width: 100%;
+      margin: 20px auto;
+      img {
+        @include center-with-margin;
+        @include size(120px, auto);
+        @include responsive-max-width(480px) {
+          @include size(80px, auto);
+        }
+      }
+    }
+    .profile {
+      @include size(100%, auto);
+      margin: 20px 0 40px 0;
+      &-img {
+        @include center-with-margin;
+        @include size(180px);
+        @include rounded-corners(50%);
+        @include responsive-max-width(480px) {
+          @include size(80px, auto);
+        }
+      }
+      &-name {
+        @include primary-title-home;
+        margin-top: 20px;
+        @include responsive-max-width(480px) {
+          font-size: 1.8rem;
+        }
+      }
+      &-role {
+        font-size: 2rem;
+        font-weight: 600;
+        @include responsive-max-width(480px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a {
+      text-decoration: none;
+    }
+    .menu-item {
+      margin: 10px auto;
+      &-link {
+        display: inline-block;
+        @include size(180px, 44px);
+        color: $text-primary-color;
+        position: relative;
+        .-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+        }
+      }
+      .-active {
+        background-color: $white-color;
+        @include rounded-corners(8px);
+        box-shadow: 0px 0px 10px $tro-color;
+      }
+    }
+  }
+  #content {
+    box-shadow: -10px 0px 80px $tro-color;
+    background-color: $admin-page-content-bgc;
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    padding: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    @include responsive-max-width(480px) {
+      width: 100vw !important;
+    }
+    .content-bar {
+      @include responsive-max-width(480px) {
+        flex-grow: 1;
+      }
+      .btn-custom {
+        padding: 0;
+        @include size(30px);
+        i {
+          font-size: 1.6rem;
+        }
+      }
+      .title-page h2 {
+        @include primary-title-home;
+        margin-left: 10px;
+      }
+    }
+    .search {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      &-frm {
+        display: flex;
+        width: 100%;
+        &-input {
+          outline: none;
+          flex-grow: 1;
+          border: none;
+          padding: 0 10px;
+          @include rounded-corners(5px);
+          font-size: 2rem;
+          box-sizing: border-box;
+        }
+        &-btn {
+          padding: 0;
+          @include size(40px);
+          @include responsive-max-width(480px) {
+            @include size(30px);
+          }
+          i {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+    .num-user {
+      width: 100%;
+      margin: 0;
+      border-bottom: 1px dashed $text-primary-color;
+      color: $admin-color;
+      font-weight: 600;
+      span {
+        color: $text-primary-color;
+      }
+    }
+    .list-users {
+      .t {
+        @include size(98%, auto);
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 0 1em;
+        & td,
+        & th {
+          border: 0;
+        }
+        &-item {
+          margin: 10px auto;
+          @include size(100%, 100px);
+          box-shadow: 0px 0px 10px $tro-color;
+          @include rounded-corners(8px);
+          @include responsive-max-width(480px) {
+            font-size: 1.4rem;
+            @include size(100%, 60px);
+            margin: 5px auto !important;
+          }
+          &-img img {
+            @include size(80px);
+            @include rounded-corners(50%);
+            @include responsive-max-width(480px) {
+              @include size(40px, auto);
+            }
+          }
+          &-action {
+            font-size: 2rem;
+            @include responsive-max-width(480px) {
+              font-size: 1.4rem;
+            }
+            a {
+              margin: 0 5px;
+              i {
+                color: $admin-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    // Form add user
+    .frm {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      &-item {
+        &-input {
+          padding: 0 10px;
+          @include rounded-corners(5px);
+          font-size: 2rem;
+          box-sizing: border-box;
+        }
+      }
+      &-btn {
+        @include size(100%, 44px);
+        @include button;
+        @include rounded-corners(5px);
+        margin-top: 10px;
+        background-color: $admin-color;
+        font-size: 1.6rem;
+        &:hover,
+        &:active,
+        &:focus {
+          @include button;
+          background-color: $admin-color;
+          @include rounded-corners(5px);
+        }
+
+        @include responsive-max-width(320px) {
+          @include size(100%, 34px);
+        }
+      }
+    }
+    //Edit profile
+    .edit-profile {
+      margin-top: 50px;
+      .-left {
+        #change-avt {
+          display: none;
+        }
+        label {
+          margin-top: 10px;
+        }
+        .avatar {
+          @include size(300px);
+        }
+      }
+      .-right {
+        .frm {
+          margin: 0;
+          &-roles {
+            padding: 0 10px;
+            @include rounded-corners(5px);
+            font-size: 2rem;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+}
+
+nav#sidebar.inactive {
+  margin-left: -250px !important;
+}
+.line100vw {
+  width: 100vw;
+}
+
+#hide-noti {
+  display: none;
+}
+.notify {
+  @include size(400px, auto);
+  background-color: $white-color;
+  @include rounded-corners(8px);
+  @include responsive-max-width(480px) {
+    @include size(200px, auto);
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include responsive-max-width(480px) {
+      &-lp {
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }
+  }
+  &__content {
+    text-align: center;
+    > .-heading {
+      font-size: 3rem;
+      font-weight: 600;
+      @include responsive-max-width(480px) {
+        font-size: 1.6rem;
+      }
+    }
+    > .-text {
+      @include responsive-max-width(480px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__controls {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    @include responsive-max-width(480px) {
+      padding: 10px;
+    }
+    .btn {
+      outline: none;
+      flex-grow: 1;
+      text-align: center;
+      padding: 5px 0;
+      > i {
+        font-size: 3rem;
+        color: $white-color;
+        @include responsive-max-width(480px) {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    > .-yes {
+      background-color: #aed9e0;
+      margin-right: 5px;
+    }
+    > .-cancel {
+      background-color: #ffa69e;
+      margin-left: 5px;
+    }
+  }
+}
+
+// LIST POSTS
+.list-posts {
+  .-item {
+    border-radius: 5px;
+    &__img {
+      @include size(100%, 150px);
+      object-fit: cover;
+    }
+  }
+  #del-post {
+    @include size(100%, 44px);
+    @include button;
+    @include rounded-corners(5px);
+    margin-top: 10px;
+    background-color: $orange-color;
+    font-size: 1.6rem;
+    &:hover,
+    &:active,
+    &:focus {
+      @include button;
+      background-color: $orange-color;
+      @include rounded-corners(5px);
+    }
+
+    @include responsive-max-width(320px) {
+      @include size(100%, 34px);
+    }
+  }
+}

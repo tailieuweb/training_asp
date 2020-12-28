@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CDW2Project.Areas.Admin.Models;
 using CDW2Project.Models;
 using DatabaseModel.CustomIdentityUser;
 using System;
@@ -13,6 +14,8 @@ namespace CDW2Project.AutoMapper
         public AutoMapperProfile()
         {
             CreateMap<UserAccount, PersonalUserViewModel>();
+            CreateMap<UserAccount, EditInforAdminModel>();
+            CreateMap<UserAccount, HeaderAdminViewModel>();
         }
     }
 }

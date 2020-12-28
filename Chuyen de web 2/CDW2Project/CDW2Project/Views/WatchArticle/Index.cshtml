@@ -1,6 +1,142 @@
 ﻿@{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutWatch.cshtml";
 }
-<h1>Index</h1>
-
+@model WatchArticleViewModel
+<div class="blackFrame">
+    <div id="deleteNotification">
+        <div class="contentDelete">Do you want to delete this comment</div>
+        <div class="deleteNotification__BtnNode">
+            <div id="deleteNotification__BtnNode__cancel">Cancel</div>
+            <div id="deleteNotification__BtnNode__ok">Delete</div>
+        </div>
+    </div>
+</div>
+<div class="editFrame">
+    <div id="editFrame_Box">
+        <div class="editFrame_editContent">Chỉnh sửa Bài viết</div>
+        <div class="editFrame_Box_editInput">
+            <textarea style="width:100%" name="edit" value="" id="editInput"></textarea>
+        </div>
+        <div class="text-danger error-none" style="margin-bottom:12px; font-size:12px">Can't enter empty</div>
+        <div class="editFrame_Box_EditBtn">
+            <span id="editNotification_BtnNode_ok">Edit</span>
+            <span id="editNotification_BtnNode_cancel">Cancel</span>
+        </div>
+    </div>
+</div>
+<div class="clapComment" id="style-1">
+    <div class="clapComment__post">
+        <span class="clapComment__post__number">
+            +4
+        </span>
+    </div>
+    <!-- Clap&Comment Clap -->
+    <div class="clapComment__clap" articleId="@Model.article.AriticleId">
+        <div class="clapComment__clap__icon">
+            <img src="~/img/clap.png" alt="Alternate Text" />
+        </div>
+        <div class="clapComment__clap__frame">
+            <span class="clapComment__clap__frame__span">0</span>
+        </div>
+    </div><!-- Clap&Comment Clap -->
+    <!-- Clap&Comment Comment -->
+    <div class="clapComment__comment " id="style-1">
+        <div class="buttonComment" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+             aria-controls="collapseExample">
+            <div class="clapCommentLeft">
+                <img src="~/img/speech-bubble.png" alt="">
+            </div>
+        </div>
+        <div class="collapse" id="collapseExample">
+            <div class="scrollbar" id="style-1">
+                <div class="card card-body reComment">
+                    <h2 class="responses">Responses (43)</h2>
+                    <input type="text" id="commentField" placeholder="What are your thoughts?" class="inputThought">
+                </div>
+                <div class="messageBox">
+                    @if (Model.article.CommentsList.Count > 0)
+                    {
+                        @foreach (var item in Model.article.CommentsList)
+                        {
+                            <div class="card card-body peter">
+                                <div class="titleRe">
+                                    <div class="titleRe__avatar">
+                                        @if (item.UserAccount.Image != null)
+                                        {
+                                            <img src="~/User_Image/@item.UserAccount.Id/@item.UserAccount.Image" class="titleRe__avatar__img">
+                                        }
+                                        else
+                                        {
+                                            <img src="/img/emty_avatar.jpg" class="titleRe__avatar__img">
+                                        }
+                                    </div>
+                                    <div class="titleRe__name">
+                                        <h3 class="titleRe__name__title">@item.UserAccount.FullName</h3>
+                                        <span class="titleRe__name__time">@DateTime.Parse(item.Date.ToString()).ToString("dddd, dd MMMM yyyy")</span>
+                                    </div>
+                                </div>
+                                <div class="commentRe">
+                                    <span class="commentRe__content">
+                                        @item.Content
+                                    </span>
+                                </div>
+                                @foreach (string role in Model.roles)
+                                {
+                                    if (role == "Admin" || Model.currentUserId == item.CommentUserAccountId)
+                                    {
+                                        <div class="watchArticle_EditBox">
+                                            <span class="editComment_btn watchBtn" commentId="@item.CommentId"><i class="far fa-edit"></i></span>
+                                            <span class="deleteComment_btn watchBtn" commentId="@item.CommentId"><i class="fas fa-eraser"></i></span>
+                                        </div>
+                                        break;
+                                    }
+                                }
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div><!-- Clap&Comment Comment -->
+</div><!-- Clap&Comment -->
+<!-- Member -->
+<div class="member">
+    <!-- Member Title-->
+    <!-- Member Infor-->
+    <div class="member__info">
+        <!-- Member Left-->
+        <div class="member__info__left">
+            <a href="/PersonalPage/Index/@Model.article.UserAccount.Id" class="member__info__left__avatar">
+                @if (Model.article.UserAccount.Image != null)
+                {
+                    <img src="~/User_Image/@Model.article.UserAccount.Id/@Model.article.UserAccount.Image" alt="">
+                }
+                else
+                {
+                    <img src="~/img/emty_avatar.jpg" alt="">
+                }
+                <span href="#" class="member__info__left__avatar__name">@Model.article.UserAccount.FullName</span>
+            </a>
+        </div> <!-- Member Left-->
+        <!-- Member Middle-->
+        <div class="member__info__middle">
+            <div class="member__info__middle__read">
+                <h4 class="member__info__middle__read__h4">@DateTime.Parse(Model.article.Date.ToString()).ToString("dddd, dd MMMM yyyy")</h4>
+            </div>
+        </div><!-- Member Middle-->
+        <!-- <div class="member__info__right">
+          <div class="member__info__right__like">
+            <span class="thumb thumbs-up"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+            <p class="member__info__right__like__p">10K</p>
+          </div>
+        </div> -->
+    </div><!-- Member Infor-->
+    <!-- Member Image-->
+    <div class="container watchArticle_Content">
+        @Html.Raw(Model.article.Content)
+    </div>
+</div><!-- Member -->
+@section WatchArticle{
+    <script src="~/js/WatchArticle/WatchArticle.js"></script>
+}

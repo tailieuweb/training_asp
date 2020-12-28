@@ -20,8 +20,13 @@
                 <!-- Banner Left Box Link-->
                 <div class="banner__left__box__link">
                     <a href="#">
-                        <img src="~/img/logo-banner.png" alt="">
-                        <h4>Lorem ipsum dolor sit amet </h4>
+                        @if (Model.articles[0].ArticleType != null)
+                        {
+                            <div style="display:flex;align-items:center;">
+                                @Html.Raw(Model.articles[0].ArticleType.image)
+                                <h4 style="margin: 0; margin-left: 8px;">@Model.articles[0].ArticleType.Name</h4>
+                            </div>
+                        }
                     </a>
                 </div>
                 <!-- Banner Left Box Title-->
@@ -67,10 +72,13 @@
                         <div class="banner__middle__box__item__left">
                             <!-- Banner Middle Box Item Left Link-->
                             <div class="banner__middle__box__item__left__link">
-                                <a href="#">
-                                    <img src="~/img/logo-banner.png" alt="">
-                                    <h4>medium articles</h4>
-                                </a>
+                                @if (Model.articles[i].ArticleType != null)
+                                {
+                                    <div style="display:flex;align-items:center;">
+                                        @Html.Raw(Model.articles[i].ArticleType.image)
+                                        <h4 style="margin: 0; margin-left: 8px;">@Model.articles[i].ArticleType.Name</h4>
+                                    </div>
+                                }
                             </div>
                             <!-- Banner Middle Box Item Left Title-->
                             <div class="banner__middle__box__item__left__title">
@@ -117,7 +125,7 @@
             <p>New Member</p>
             <div class="banner__right__box__all scrollbar" id="style-1">
             </div>
-            <span id="btn_Show_User">See More</span>
+            <span id="btn_Show_User" class="buttonMore">See More</span>
         </div><!-- Banner Right Box-->
     </div><!-- Banner Right-->
 </div><!-- Banner -->
@@ -131,9 +139,13 @@
     </div><!-- New Left -->
     <!-- New Right -->
     <div class="new__right">
-        <div class="boxSearching">
-            Tìm kiếm: 
-            <input type="text" name="searchData" id="searchData" />
+        <div class="formSearch">
+            <span class="searchName">
+                Tìm kiếm <i class="fas fa-search"></i> :
+            </span>
+            <div class="boxSearching">
+                <input type="text" name="searchData" id="searchData" class="boxSearching__form" placeholder="Search" />
+            </div>
         </div>
         <div class="new__right__box">
             @if (Model.articleTypes.Any())

@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/_Layout.cshtml";
+}
+@model RegisterViewModel
+<div id="content">
+    <div class="container">
+        <div id="100vw"></div>
+        <!-- Sidebar button -->
+        <div class="row content-bar d-flex align-items-center">
+            <button type="button"
+                    class="btn btn-info btn-custom"
+                    id="sidebarCollapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="title-page">
+                <h2>Add user</h2>
+            </div>
+        </div>
+        <!-- Form add user -->
+        <form class="frm" asp-controller="AddUser" asp-action="Index" asp-area="Admin" method="post">
+            @if (@ViewBag.successed != null)
+            {
+                foreach (KeyValuePair<string, string> @item in @ViewBag.successed)
+                {
+                    <div class="text-success frm-log-reg-noti">@item.Value</div>
+                }
+            }
+            @Html.ValidationSummary(false, "", new { @class = "text-danger frm-log-reg-noti" })
+            <div class="frm-item form-group">
+                <label asp-for="userName"></label>
+                <input asp-for="userName" type="text" class="form-control frm-item-input" />
+                <span asp-validation-for="userName" class="text-danger"></span>
+            </div>
+            <div class="frm-item form-group">
+                <label asp-for="email">Email</label>
+                <input asp-for="email" type="email" class="form-control frm-item-input" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="frm-item form-group">
+                <label asp-for="password">Password</label>
+                <input asp-for="password" type="password" class="form-control frm-item-input" />
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+            <div class="frm-item form-group">
+                <label asp-for="confirmPassword">Confirm password</label>
+                <input asp-for="confirmPassword" type="password" class="form-control frm-item-input" />
+                <span asp-validation-for="confirmPassword" class="text-danger"></span>
+            </div>
+            <!-- Button -->
+            <button type="submit" class="frm-btn">Add User</button>
+        </form>
+    </div>
+</div>
+

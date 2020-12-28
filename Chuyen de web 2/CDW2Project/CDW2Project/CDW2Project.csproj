@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>69f30a57-4554-4c2b-9378-18299150299a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -59,6 +60,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.0.7" />
   </ItemGroup>
 
   <ItemGroup>
@@ -66,10 +68,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
     <Folder Include="wwwroot\Article_Image\81b810d560ba31ce547e645b72c04903\" />
     <Folder Include="wwwroot\ckfinder\ckfinder\App_Data\" />
     <Folder Include="wwwroot\ckfinder\ckfinder\src\CKFinder.Connector.WebApp\userfiles\" />
     <Folder Include="wwwroot\ckfinder\ckfinder\userfiles\" />
+    <Folder Include="wwwroot\scss\ForgotPassword\" />
     <Folder Include="wwwroot\User_Image\12eeae75-95ee-42b3-8a67-2e061cd5f316\" />
     <Folder Include="wwwroot\User_Image\1868bf7e-f9b3-4ebb-8499-61427b7de7b6\" />
     <Folder Include="wwwroot\User_Image\72bfa4ae-3d59-4f3f-838d-a2c474bb6941\" />

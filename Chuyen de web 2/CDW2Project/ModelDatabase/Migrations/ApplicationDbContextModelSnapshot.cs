@@ -291,6 +291,9 @@ namespace ModelDatabase.Migrations
 
                     b.HasKey("ArticleTypeId");
 
+                    b.HasIndex("Name")
+                        .IsUnique();
+
                     b.ToTable("ArticleType");
                 });
 
